@@ -24,6 +24,10 @@ Route::get('/home', 'HomeController@index')->name('home');
 //this is resource controller, if you want to make a CRUD system, just look at it
 Route::resource('/template', 'TemplateController');
 
+//article routes
+Route::resource('/articles', 'ArticleController');
+
+//posts routes
 Route::resource('/posts', 'PostController');
 
 
