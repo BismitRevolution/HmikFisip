@@ -1,54 +1,159 @@
-header.masthead {
-  text-align: center;
-  color: white;
-  background-image: url("../img/fotoHeader.jpg");
-  background-repeat: no-repeat;
-  background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+@media (min-width: 768px) {
+    /* show 3 items */
+    .profil-oke .carousel-inner .active,
+    .profil-oke .carousel-inner .active + .carousel-item,
+    .profil-oke .carousel-inner .active + .carousel-item + .carousel-item {
+        display: inline-block;
+    }
+
+    .profil-oke .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .profil-oke .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item,
+    .profil-oke .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+
+    .profil-oke .carousel-inner .carousel-item-next,
+    .profil-oke .carousel-inner .carousel-item-prev {
+      position: relative;
+      transform: translate3d(0, 0, 0);
+    }
+
+    .profil-oke .carousel-inner .active.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* left or forward direction */
+    .profil-oke .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .profil-oke .carousel-item-next.carousel-item-left + .carousel-item,
+    .profil-oke .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item,
+    .profil-oke .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+
+    /* farthest right hidden item must be abso position for animations */
+    .profil-oke .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+
+    /* right or prev direction */
+    .profil-oke .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .profil-oke .carousel-item-prev.carousel-item-right + .carousel-item,
+    .profil-oke .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item,
+    .profil-oke .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+
 }
 
-header.masthead .intro-text {
-  padding-top: 150px;
-  padding-bottom: 100px;
+.artikel-oke .carousel-inner img {
+    width: 100%;
+    height: 500px;
 }
 
-header.masthead .intro-text .intro-lead-in {
-  font-size: 22px;
-  font-style: italic;
-  line-height: 22px;
-  margin-bottom: 25px;
-  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+.artikel-oke .carousel-caption {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
-header.masthead .intro-text .intro-heading {
-  font-size: 50px;
-  font-weight: 700;
-  line-height: 50px;
-  margin-bottom: 25px;
-  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+.masthead {
+    text-align: center;
+    color: white;
+    background-image: url("../img/fotoContoh.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: top center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.masthead .intro-text {
+    padding-top: 250px;
+    padding-bottom: 200px;
+    color: white;
+}
+
+.masthead .intro-text .intro-lead-in {
+    font-size: 22px;
+    font-style: italic;
+    line-height: 22px;
+    margin-bottom: 25px;
+    font-family: 'Margot-Bold', 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.masthead .intro-text .intro-heading {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    margin-bottom: 25px;
+    font-family: 'Adam', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 @media (min-width: 768px) {
-  header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px;
-  }
-  header.masthead .intro-text .intro-lead-in {
-    font-size: 40px;
-    font-style: italic;
-    line-height: 40px;
-    margin-bottom: 25px;
-    font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
-  header.masthead .intro-text .intro-heading {
-    font-size: 75px;
-    font-weight: 700;
-    line-height: 75px;
+    .masthead .intro-text {
+        padding-top: 425px;
+        padding-bottom: 375px;
+    }
+    .masthead .intro-text .intro-lead-in {
+        font-size: 40px;
+        font-style: italic;
+        line-height: 40px;
+        margin-bottom: 25px;
+        font-family: 'Adam', 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+    .masthead .intro-text .intro-heading {
+        font-size: 75px;
+        font-weight: 700;
+        line-height: 75px;
+        margin-bottom: 50px;
+        font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+}
+
+.artikel-oke .judul {
+    font-family: 'Margot-Bold', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding-bottom: 15px;
+}
+
+.artikel-oke {
+    margin-top: 50px;
     margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: black;
+}
+
+.tentang-kami .judul {
+    font-family: 'Margot-Bold', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    padding-bottom: 15px;
+}
+
+.tentang-kami .misi-judul {
+    padding-left: 10px;
+}
+
+.tentang-kami {
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  }
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
 }
