@@ -155,6 +155,14 @@ HMIK UI 2017 memiliki harapan terhadap lingkungan Ilmu Komunikasi UI yang dapat 
         </a>
     </div>
 </div>
+
+
+<div class="kontak-kami">
+    <div class="container">
+        <div class="col-md-12 text-center judul">
+            <h1>Kontak Kami</h1>
+        </div>
+    </div>
 </div>
 
 
