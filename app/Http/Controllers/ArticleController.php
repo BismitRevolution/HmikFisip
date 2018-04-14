@@ -124,7 +124,19 @@ class ArticleController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $request->validate([
+            'title' => 'required|max:255',
+            'body' => 'required',
+        ]);
+
+        $article = Article::find($id);
+
+        $article->title = $request->input('title');
+        $article->body = $request->input('body');
+        $article->save();
+
+        return redirect()->route('admin.articles.show', $article->article_id);
+    
     }
 
     /**
