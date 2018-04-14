@@ -35,8 +35,6 @@
         <!-- Default Style -->
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         @yield('extra-css')
-        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
         <!-- Google Open Sans -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
@@ -71,6 +69,9 @@
         <!-- Foundation ZURB -->
         <!-- <script type="application/javascript" src="{{ asset('js/vendor/what-input.js') }}"></script> -->
         <!-- <script type="application/javascript" src="{{ asset('js/vendor/foundation.min.js') }}"></script> -->
+
+        <!-- FontAwesome -->
+        <script defer src="{{ asset('js/vendor/fontawesome-all.min.js') }}"></script>
 
         <!-- Customization -->
         <script type="application/javascript" src="{{ asset('js/_header.js') }}"></script>

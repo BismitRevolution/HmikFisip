@@ -159,8 +159,19 @@ HMIK UI 2017 memiliki harapan terhadap lingkungan Ilmu Komunikasi UI yang dapat 
 
 <div class="kontak-kami">
     <div class="container">
-        <div class="col-md-12 text-center judul">
-            <h1>Kontak Kami</h1>
+        <div class="icons row">
+            <a class="col-3 text-center" href="https://twitter.com/hmikui" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a class="col-3 text-center" href="https://www.facebook.com/hmikui" target="_blank">
+                <i class="fab fa-facebook-f col-3"></i>
+            </a>
+            <a class="col-3 text-center" href="https://www.instagram.com/hmikui/" target="_blank">            
+                <i class="fab fa-instagram col-3"></i>
+            </a>
+            <a class="col-3 text-center" href="https://www.youtube.com/channel/UC5r8AhjIu9XN_qricB_Ux2w" target="_blank">            
+                <i class="fab fa-youtube col-3"></i>
+            </a>
         </div>
     </div>
 </div>
