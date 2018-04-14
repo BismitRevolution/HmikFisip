@@ -10,8 +10,12 @@
 <div class="masthead">
     <div class="container">
         <div class="intro-text">
-            <div class="intro-heading text-uppercase">HMIK UI 2018</div>
-            <div class="intro-lead-in">Sinergis, Dekat, Berkelanjutan</div>
+            <div class="intro-heading text-uppercase">
+                <p style="background-color:rgba(200,100,80,0.85)" id="judul-hmik">HMIK UI 2018</p>
+            </div>
+            <div class="intro-lead-in">
+                <p id="motto">Sinergis, Dekat, Berkelanjutan</p>
+            </div>
         </div>
     </div>
 </div>
@@ -23,27 +27,23 @@
         </div>
         <div class="col-lg-12 row">
             <div class="col-lg-6">
-                <h3 class="text-uppercase title-2 opacity-60">Visi dan Misi</h3>
-                <div class="misi-judul">
-                    <h2 class="text-uppercase text-left">“Bersinergi dalam menciptakan HMIK UI yang dekat dan berkelanjutan.”</h2>
-                </div>
-                <ol class="misi">
-                    <li>Melaksanakan program kerja yang didasari oleh data yang dikembangkan dari riset terhadap kebutuhan dan permasalahan.</li>
-                    <li>Melakukan pengawasan terhadapat proses jalannya setiap program kerja secara berkelanjutan.</li>
-                    <li>Menciptakan iklim & budaya organisasi yang mengedepankan sense of belonging dan pengembangan sistematika dan manajemen organisasi.</li>
-                    <li>Mengoptimalkan advokasi kebutuhan dan minat bakat mahasiswa Ilmu Komunikasi UI.</li>
-                    <li>Menampung gagasan dan aspirasi dari elemen lingkungan Komunikasi UI dan publik HMIK UI.</li>
-                    <li>Menciptakan kolaborasi dan kemudahan akses informasi di antara publik internal dan eksternal HMIK UI.</li>
-                </ol>
-            </div>
-            <div class="col-lg-1">
-            </div>
-            <div class="col-lg-5 col-lg-push-1 hidden-xs text-right">
-                <br><br><br><br><br> <br>
-                <h3 class="text-uppercase title-2 opacity-60">Sejarah</h3>
+                <h3 class="text-uppercase title-2 opacity-60">MISI</h3>
                 <br>
-                <p class="opacity-70">
-HMIK UI 2017 memiliki harapan terhadap lingkungan Ilmu Komunikasi UI yang dapat berjalan secara sinergis. Dalam membangun harapan itu, HMIK UI 2017 menyadari bahwa banyak elemen-elemen penting yang terlibat, seperti mahasiswa, Program Sarjana dan Departemen Ilmu Komunikasi UI dan stakeholder lainnya. Oleh karena itu, HMIK UI 2017 menurunkan semangat bersinergi ke dalam nilai inisiatif dan kolaborasi. Inisiatif, berupaya sebagai penggerak dalam mencari tahu kebutuhan serta peka terhadap permasalahan yang ada. Upaya tersebut dilakukan dengan berpedoman pada pengembangan riset terhadap hal apa saja yang dibutuhkan oleh elemen-elemen yang ada di lingkungan Ilmu Komunikasi UI, khususnya mahasiswa dengan tujuan setiap program yang dibuat sesuai dengan target yang ingin dicapai. Kolaborasi, dengan melakukan langkah yang mengedepankan kerja sama di antara stakeholder dan dilandasi oleh semangat serta motivasi untuk mewujudkan suatu tujuan bersama. Upaya ini diharapkan mampu menggerakkan semua elemen dan dapat merangkul publik HMIK UI.</p>
+                <div class="misi-judul">
+                    <ol class="misi text-left">
+                        <li>Melaksanakan program kerja yang didasari oleh data yang dikembangkan dari riset terhadap kebutuhan dan permasalahan.</li>
+                        <li>Melakukan pengawasan terhadapat proses jalannya setiap program kerja secara berkelanjutan.</li>
+                        <li>Menciptakan iklim & budaya organisasi yang mengedepankan sense of belonging dan pengembangan sistematika dan manajemen organisasi.</li>
+                        <li>Mengoptimalkan advokasi kebutuhan dan minat bakat mahasiswa Ilmu Komunikasi UI.</li>
+                        <li>Menampung gagasan dan aspirasi dari elemen lingkungan Komunikasi UI dan publik HMIK UI.</li>
+                        <li>Menciptakan kolaborasi dan kemudahan akses informasi di antara publik internal dan eksternal HMIK UI.</li>
+                    </ol>
+                </div>
+            </div>
+            <div class="col-lg-6 col-lg-push-1 hidden-xs">
+                <h3 class="text-uppercase title-2 opacity-60 text-right">VISI</h3>
+                <br><br><br>
+                <h2 class="text-uppercase text-right"><br>“Bersinergi dalam menciptakan HMIK UI yang dekat dan berkelanjutan.”<br></h2>
             </div>
         </div>
     </div>
@@ -103,45 +103,84 @@ HMIK UI 2017 memiliki harapan terhadap lingkungan Ilmu Komunikasi UI yang dapat 
 </div>
 
 <div class="profil-oke" id="Profil">
-    <div class="container-fluid">
-    <div id="carouselExample" class="carousel slide" data-ride="carousel" data-interval="500">
-        <div class="carousel-inner row w-100 mx-auto" role="listbox">
-            <div class="carousel-item col-md-4 active">
-                <img class="img-fluid mx-auto d-block" src="{{ asset('img/myhome1.jpg') }}" alt="slide 1">
+    <div id="wrapper">
+    	<div id="slider">
+    		<div class="slide" style="background-image: url('..img/Aqila-Mazi.jpg');">
+                <img src="{{ asset('img/myhome1.jpg') }}">
+    			<div class="slide-block">
+    				<h4>Ice Age</h4>
+    				<p>Heading south to avoid a bad case of global frostbite, a group of migrating misfit creatures embark on a hilarious quest to reunite a human baby with his tribe.</p>
+    			</div>
+    		</div>
+
+    		<div class="slide" style="background-image: url('..img/Eko-Razaki-copy.jpg');">
+                <img src="{{ asset('img/myhome1.jpg') }}">
+    			<div class="slide-block">
+    				<h4>For The Birds</h4>
+    				<p>For the Birds is an animated short film, produced by Pixar Animation Studios released in 2000. It is shown in a theatrical release of the 2001 Pixar feature film Monsters, Inc.</p>
+    			</div>
+    		</div>
+
+            <div class="slide" style="background-image: url('..img/Eko-Razaki-copy.jpg');">
+                <img src="{{ asset('img/myhome1.jpg') }}">
+                <div class="slide-block">
+                    <h4>For The Birds</h4>
+                    <p>For the Birds is an animated short film, produced by Pixar Animation Studios released in 2000. It is shown in a theatrical release of the 2001 Pixar feature film Monsters, Inc.</p>
+                </div>
             </div>
-            <div class="carousel-item col-md-4">
-                <img class="img-fluid mx-auto d-block" src="{{ asset('img/myhome1.jpg') }}" alt="slide 2">
+
+            <div class="slide" style="background-image: url('..img/Eko-Razaki-copy.jpg');">
+                <img src="{{ asset('img/myhome1.jpg') }}">
+    			<div class="slide-block">
+    				<h4>For The Birds</h4>
+    				<p>For the Birds is an animated short film, produced by Pixar Animation Studios released in 2000. It is shown in a theatrical release of the 2001 Pixar feature film Monsters, Inc.</p>
+    			</div>
+    		</div>
+
+            <div class="slide" style="background-image: url('..img/Eko-Razaki-copy.jpg');">
+                <img src="{{ asset('img/myhome1.jpg') }}">
+    			<div class="slide-block">
+    				<h4>For The Birds</h4>
+    				<p>For the Birds is an animated short film, produced by Pixar Animation Studios released in 2000. It is shown in a theatrical release of the 2001 Pixar feature film Monsters, Inc.</p>
+    			</div>
+    		</div>
+
+            <div class="slide" style="background-image: url('..img/Eko-Razaki-copy.jpg');">
+                <img src="{{ asset('img/myhome1.jpg') }}">
+    			<div class="slide-block">
+    				<h4>For The Birds</h4>
+    				<p>For the Birds is an animated short film, produced by Pixar Animation Studios released in 2000. It is shown in a theatrical release of the 2001 Pixar feature film Monsters, Inc.</p>
+    			</div>
+    		</div>
+
+    		<div class="slide" style="background-image: url('..img/myhome1.jpg');">
+                <img src="{{ asset('img/myhome1.jpg') }}">
+    			<div class="slide-block">
+    				<h4>UP</h4>
+    				<p>A comedy adventure in which 78-year-old Carl Fredricksen fulfills his dream of a great adventure when he ties thousands of balloons to his house and flies away to the wilds of South America.</p>
+    			</div>
+    		</div>
+
+            <div class="slide" style="background-image: url('..img/Aqila-Mazi.jpg');">
+                <img src="{{ asset('img/fotoContoh.jpg') }}">
+                <div class="slide-block">
+                    <h4>Ice Age</h4>
+                    <p>Heading south to avoid a bad case of global frostbite, a group of migrating misfit creatures embark on a hilarious quest to reunite a human baby with his tribe.</p>
+                </div>
             </div>
-            <div class="carousel-item col-md-4">
-                <img class="img-fluid mx-auto d-block" src="{{ asset('img/myhome1.jpg') }}" alt="slide 3">
+
+            <div class="slide" style="background-image: url('..img/Eko-Razaki-copy.jpg');">
+                <img src="{{ asset('img/myhome1.jpg') }}">
+                <div class="slide-block">
+                    <h4>For The Birds</h4>
+                    <p>For the Birds is an animated short film, produced by Pixar Animation Studios released in 2000. It is shown in a theatrical release of the 2001 Pixar feature film Monsters, Inc.</p>
+                </div>
             </div>
-            <div class="carousel-item col-md-4">
-                <img class="img-fluid mx-auto d-block" src="{{ asset('img/myhome1.jpg') }}" alt="slide 4">
-            </div>
-            <div class="carousel-item col-md-4">
-                <img class="img-fluid mx-auto d-block" src="{{ asset('img/myhome1.jpg') }}" alt="slide 5">
-            </div>
-            <div class="carousel-item col-md-4">
-                <img class="img-fluid mx-auto d-block" src="{{ asset('img/myhome1.jpg') }}" alt="slide 6">
-            </div>
-            <div class="carousel-item col-md-4">
-                <img class="img-fluid mx-auto d-block" src="{{ asset('img/myhome1.jpg') }}" alt="slide 7">
-            </div>
-            <div class="carousel-item col-md-4">
-                <img class="img-fluid mx-auto d-block" src="{{ asset('img/myhome1.jpg') }}" alt="slide 7">
-            </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-            <i class="fa fa-chevron-left fa-lg text-muted"></i>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next text-faded" href="#carouselExample" role="button" data-slide="next">
-            <i class="fa fa-chevron-right fa-lg text-muted"></i>
-            <span class="sr-only">Next</span>
-        </a>
+
+    	</div>
     </div>
 </div>
-</div>
+
 
 
 @endsection
