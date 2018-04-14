@@ -7,7 +7,7 @@
 @endsection
 
 @section('content')
-<<<<<<< HEAD
+
 <div class="container">
 
 	<div>
@@ -21,7 +21,6 @@
 			<br>
 			<p>{{ $article->body }}</p>
 		@endforeach    
-=======
 <div class="masthead">
     <div class="container">
         <div class="intro-text">
@@ -29,7 +28,6 @@
             <div class="intro-lead-in">Sinergis, Dekat, Berkelanjutan</div>
         </div>
     </div>
->>>>>>> a504ada6703c94d5be128149532aadbbf0aa1bdd
 </div>
 
 <div class="tentang-kami" id="About">
