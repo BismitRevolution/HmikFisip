@@ -1,45 +1,36 @@
-
 #nav-oke {
-  background-color: rgba(216, 114, 12, 0.69);
+  background-color: transparent;
 }
 
 #nav-oke .navbar-toggler {
-  font-size: 12px;
+  font-size: 15px;
   right: 0;
-  padding: 13px;
+  padding: 15px;
   text-transform: uppercase;
-  color: white;
+  font-weight: bold;
+  color: black;
   border: 0;
-  background-color: rgba(216, 114, 12, 0.69);
+  background-color: rgba(255, 203, 91, 0.5);
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
-#nav-oke .navbar-brand {
-  color: #fed136;
-  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial;
-}
-
-#nav-oke .navbar-brand.active, #nav-oke .navbar-brand:active, #nav-oke .navbar-brand:focus, #nav-oke .navbar-brand:hover {
-  color: #fec503;
-}
-
 #nav-oke .navbar-nav .nav-item .nav-link {
-  font-size: 90%;
+  font-size: 75%;
   font-weight: 400;
-  padding: 0.75em 0;
+  padding: 0.5em 0;
   letter-spacing: 1px;
-  color: white;
+  color: black;
   font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 
 #nav-oke .navbar-nav .nav-item .nav-link.active, #nav-oke .navbar-nav .nav-item .nav-link:hover {
-  color: #fed136;
+  color: red;
 }
 
 @media (min-width: 992px) {
   #nav-oke {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
@@ -47,21 +38,16 @@
     background-color: transparent;
   }
   #nav-oke .navbar-brand {
-    font-size: 1.75em;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
   #nav-oke .navbar-nav .nav-item .nav-link {
-    padding: 1.1em 1em !important;
+    padding: 0.5em 0.5em !important;
   }
   #nav-oke.navbar-shrink {
     padding-top: 0;
     padding-bottom: 0;
     background-color: rgba(216, 114, 12, 0.69);
-  }
-  #nav-oke.navbar-shrink .navbar-brand {
-    font-size: 1.25em;
-    padding: 12px 0;
   }
 }

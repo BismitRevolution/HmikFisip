@@ -16,6 +16,7 @@
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
+        <!-- Online Bootstrap-->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Normalize CSS -->
         <link rel="stylesheet" href="{{ asset('css/vendor/normalize.css') }}">
@@ -35,8 +36,6 @@
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         @yield('extra-css')
         <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-
-        <link href="css/agency.min.css" rel="stylesheet">
 
         <!-- Google Open Sans -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
@@ -76,6 +75,7 @@
         <!-- Customization -->
         <script type="application/javascript" src="{{ asset('js/_header.js') }}"></script>
         <script type="application/javascript" src="{{ asset('js/_footer.js') }}"></script>
+
         @yield('extra-js')
 
         @include('layouts._footer')
