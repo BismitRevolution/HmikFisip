@@ -11,13 +11,15 @@
 
 	<div>
 		<h1>Navigation</h1>
-		<a href="{{ route('articles.create') }}">Create Article</a>
+		<button href="{{ route('articles.create') }}" class="btn btn-primary btn-large">Create Article</button>
+		<button href="{{ route('articles.create') }}" class="btn btn-primary btn-danger">Article</button>
 	</div>
 	<h1>Articles</h1>
-	@foreach($articles as $article)
-		<h2>{{ $article->title }}</h2>
-		<p>{{ $article->body }}</p>
-	@endforeach    
+		@foreach($articles as $article)
+			<h2>{{ $article->title }}</h2>
+			<br>
+			<p>{{ $article->body }}</p>
+		@endforeach    
 </div>
 @endsection
 
