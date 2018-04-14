@@ -1,0 +1,53 @@
+#nav-oke {
+  background-color: transparent;
+}
+
+#nav-oke .navbar-toggler {
+  font-size: 15px;
+  right: 0;
+  padding: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: black;
+  border: 0;
+  background-color: rgba(255, 203, 91, 0.5);
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#nav-oke .navbar-nav .nav-item .nav-link {
+  font-size: 75%;
+  font-weight: 400;
+  padding: 0.5em 0;
+  letter-spacing: 1px;
+  color: black;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#nav-oke .navbar-nav .nav-item .nav-link.active, #nav-oke .navbar-nav .nav-item .nav-link:hover {
+  color: red;
+}
+
+@media (min-width: 992px) {
+  #nav-oke {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+  }
+  #nav-oke .navbar-brand {
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #nav-oke .navbar-nav .nav-item .nav-link {
+    padding: 0.5em 0.5em !important;
+  }
+  #nav-oke.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: rgba(216, 114, 12, 0.69);
+  }
+}
