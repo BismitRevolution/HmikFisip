@@ -146,10 +146,9 @@ class ArticleController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
-    {
+    {   
         $post = DB::table('articles')->where('article_id', $id);
         $media = DB::table('media')->where('article_id', $id);
-
         $media->delete();
         $post->delete();
 

@@ -11,9 +11,9 @@
 				<button type="submit" class="btn btn-primary btn-block btn-setting">Edit Vendor</button>
 			</form>
 			<form action="{{ route('admin.articles.destroy', ['id' => $article->article_id]) }}" method="POST">
-				<input disabled type="hidden" name="_method" value="DELETE" />
+    			{!! csrf_field() !!}
+    			<input type="hidden" name="_method" value="delete" />
 				<button type="submit" class="btn btn-danger btn-block btn-setting">Delete Vendor</button>
-				{!! csrf_field() !!}
 			</form>
 		</div>
 	</div>
