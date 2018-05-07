@@ -1,5 +1,23 @@
+.padding-add {
+    transition: 1s;
+    padding-top: 10px;
+}
+
+.padding-rmv {
+    transition: 1s;
+    padding-top: 0px;
+}
+
+.black-bg {
+    background-color: rgba(255, 150, 150, 0.85);
+}
+
+.transparent-bg {
+    background-color: transparent;
+}
+
 #nav-oke {
-  background-color: transparent;
+
 }
 
 #nav-oke .navbar-toggler {
@@ -29,13 +47,12 @@
 
 @media (min-width: 992px) {
   #nav-oke {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 0;
     -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
     -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
     transition: padding-top 0.3s, padding-bottom 0.3s;
     border: none;
-    background-color: transparent;
+
   }
   #nav-oke .navbar-brand {
     -webkit-transition: all 0.3s;
