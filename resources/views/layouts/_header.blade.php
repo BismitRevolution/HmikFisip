@@ -1,18 +1,26 @@
-<nav class="navbar navbar-expand-lg fixed-top" id="nav-oke">
-    <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#masthead">
-            <img src="{{ asset('img/logo-hmik.png') }}" alt="logo-hmik" style="width:200px;">
+<nav class="navbar navbar-expand-lg fixed-top navbar-light new-navbar">
+    <div class="container-fluid">
+
+        <a class="navbar-brand js-scroll-trigger" href="#home">
+            <img src="{{ asset('img/img-logo.png') }}" alt="Logo HMIK FISIP UI" class="navbar-logo" id="nav-logo">
         </a>
-        <div class="collapse navbar-collapse">
-            <ul class="navbar-nav text-uppercase ml-auto">
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#About">Tentang Kami</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Profil">Profil</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Pojok">Pojok Mahasiswa</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Ruang">Ruang Estetika</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Artikel">Artikel</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Event">Event</a></li>
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Kontak">Kontak Kami</a></li>
+
+        <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbar-main" aria-controls="navbar-main" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar-main">
+            <ul class="nav navbar-nav text-uppercase ml-auto text-center">
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" data-toggle="collapse" data-target=".navbar-collapse.show" href="#header">HOME</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" data-toggle="collapse" data-target=".navbar-collapse.show" href="#tentang-kami">TENTANG KAMI</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" data-toggle="collapse" data-target=".navbar-collapse.show" href="#profil">PROFIL</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" data-toggle="collapse" data-target=".navbar-collapse.show" href="#pojok-mahasiswa">POJOK MAHASISWA</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" data-toggle="collapse" data-target=".navbar-collapse.show" href="#ruang-estetika">RUANG ESTETIKA</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" data-toggle="collapse" data-target=".navbar-collapse.show" href="#artikel">ARTIKEL</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" data-toggle="collapse" data-target=".navbar-collapse.show" href="#event">EVENT</a></li>
+                <li class="nav-item"><a class="nav-link js-scroll-trigger" data-toggle="collapse" data-target=".navbar-collapse.show" href="#kontak-kami">KONTAK KAMI</a></li>
             </ul>
         </div>
+
     </div>
 </nav>
