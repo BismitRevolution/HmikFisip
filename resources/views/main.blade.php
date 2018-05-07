@@ -38,7 +38,7 @@
         <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
         <!-- Google Open Sans -->
-        <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
         <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
@@ -71,10 +71,13 @@
         <!-- Foundation ZURB -->
         <!-- <script type="application/javascript" src="{{ asset('js/vendor/what-input.js') }}"></script> -->
         <!-- <script type="application/javascript" src="{{ asset('js/vendor/foundation.min.js') }}"></script> -->
+        <script type="application/javascript" src="{{ asset('js/vendor/jquery.carouFredSel.js') }}"></script>
 
         <!-- Customization -->
         <script type="application/javascript" src="{{ asset('js/_header.js') }}"></script>
         <script type="application/javascript" src="{{ asset('js/_footer.js') }}"></script>
+        <script type="application/javascript" src="{{ asset('js/index.js') }}"></script>
+        <script type="application/javascript" src="{{ asset('js/img-slider.js') }}"></script>
 
         @yield('extra-js')
 
