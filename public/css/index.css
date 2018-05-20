@@ -1,0 +1,202 @@
+.header-section {
+    margin-bottom: 70px;
+}
+
+.header-section .hmik-logo {
+    display: block;
+    position: relative;
+    margin: 80px auto 30px;
+}
+
+#header-logo {
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header-logo-word {
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header-photo {
+    display: block;
+    margin: 10px auto;
+    box-shadow: 20px 20px rgb(243, 207, 506);
+    -moz-box-shadow: 20px 20px rgb(243, 207, 50);
+    -webkit-box-shadow: 20px 20px rgb(243, 207, 50);
+    -o-box-shadow: 20px 20px rgb(243, 207, 50);
+    width: 80vw;
+}
+
+.tentang-kami-section {
+    margin: 60px 0 20px;
+}
+
+.tentang-kami-section .about-title h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 3vw;
+    color: white;
+    background-color: rgb(14, 111, 62);
+    text-align: right;
+    padding: 230px 30px 15px 7vw;
+}
+
+.tentang-kami-section .desc1 h4, .tentang-kami-section .desc1 p, .tentang-kami-section .desc1 li {
+    font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0 20px;
+    font-size: 28px;
+}
+
+.tentang-kami-section .desc2 h4 {
+    font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0 20px;
+    font-size: 28px;
+}
+
+.tentang-kami-section .desc2 p {
+    font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0 20px;
+    font-size: 15px;
+}
+
+.tentang-kami-section .desc3 h4 {
+    font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0 20px;
+    font-size: 28px;
+}
+
+#struktur-organisasi {
+    margin: 0 20px;
+    width: 690px;
+}
+
+.tentang-kami-section .desc4 h4 {
+    font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0 20px;
+    font-size: 28px;
+}
+
+.tentang-kami-section .desc4 p {
+    font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0 20px;
+    font-size: 15px;
+}
+
+.tentang-kami-section .nav {
+    width: 100%;
+    list-style-type: none;
+    display: table;
+    margin-right: 10px;
+    padding: 0;
+    border-bottom: 5px solid rgb(14, 111, 62);
+}
+
+.tentang-kami-section .nav-item {
+    padding: 5px 5px;
+    display: table-cell;
+}
+
+.tentang-kami-section .nav-item a {
+    font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: rgb(14, 111, 62);
+    font-size: 20px;
+    letter-spacing: 0.5vw;
+}
+
+.tentang-kami-section .nav-item a:hover {
+    transition: 1s;
+    color: rgb(200, 230, 200);
+}
+
+.tentang-kami-section .more-click {
+    margin-top: 550px;
+}
+
+.tentang-kami-section .more-click a {
+    color: red;
+    text-align: right;
+}
+
+@media (max-width: 382px) {
+
+    #struktur-organisasi {
+        margin: auto;
+    }
+}
+
+@media (max-width: 520px) {
+    .tentang-kami-section .nav-item a {
+        margin: 1px !important;
+        padding: 0 !important;
+        letter-spacing: 0 !important;
+        font-size: 5px !important;
+    }
+
+    #struktur-organisasi {
+        margin-left: auto;
+        width: 320px!important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .tentang-kami-section .about-title h3 {
+        padding: 20px 30px 15px 7vw;
+    }
+
+    .tentang-kami-section .nav-item a {
+        font-size: 15px !important;
+        display: block !important;
+    }
+
+    .tentang-kami-section .nav {
+        display: block !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .tentang-kami-section .nav-item a {
+        font-size: 15px !important;
+        display: block !important;
+    }
+
+    .tentang-kami-section .nav {
+        display: block !important;
+    }
+
+    .tentang-kami-section .desc1 h4, .tentang-kami-section .desc1 p, .tentang-kami-section .desc1 li {
+        font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin: 0 10px;
+        font-size: 15px !important;
+    }
+
+    .tentang-kami-section .desc2 h4 {
+        font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin: 0 10px;
+        font-size: 15px !important;
+    }
+
+    .tentang-kami-section .desc3 h4 {
+        font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin: 0 10px;
+        font-size: 15px !important;
+    }
+
+    #struktur-organisasi {
+        margin: auto;
+        width: 500px;
+    }
+
+    .tentang-kami-section .desc4 h4 {
+        font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin: 0 10px;
+        font-size: 15px !important;
+    }
+
+    .tentang-kami-section .more-click {
+        margin-top: 10px !important;
+        margin-left: 10px !important;
+    }
+}
