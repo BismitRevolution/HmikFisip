@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Notifications\InboxMessage;
 use App\Http\Controllers\Controller;
 use Mail;
+use Session;
 
 class ContactController extends Controller
 {
@@ -29,8 +30,10 @@ class ContactController extends Controller
 
         Mail::send('email.contact', $data, function($message) use ($data) {
             $message->from($data['email']);
-            $message->to('nataprawiraf@gmail.com');
+            $message->to('hmik.fisip.ui.ac.id');
             $message->subject($data['subject']);
         });
+        Session::flash("success", "Your email was sent!");
+        return redirect()->route('contact.get');
     }
 }
