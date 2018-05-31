@@ -38,14 +38,10 @@
 }
 
 @font-face {
-    font-family: 'Roboto Thin';
-    src: url('/fonts/Roboto-Thin.ttf');
+    font-family: 'Benton';
+    src: url('/fonts/BentonSans-ExtraCondensed-Black.otf');
 }
 
-@font-face {
-    font-family: 'Roboto Bold';
-    src: url('/fonts/Roboto-Bold.ttf');
-}
 .bg-transparent {
     background: rgba(255, 255, 255, 0);
 }
