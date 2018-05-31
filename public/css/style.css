@@ -165,16 +165,71 @@
     color: seagreen;
 }
 .kontak-kami {
-    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin-top: 50px;
     margin-bottom: 100px;
     padding-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #a9cd9d;
-    padding-bottom: 10px;
-    padding-top: 10px;
+.kontak-kami .title {
+    font-family: Adam, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: seagreen;
+    
+}
+
+.kontak-kami #form {
+    font-family: 'HelvLight Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: black;
+    font-size: 20px;
+    text-align: right;
+    
+}
+
+.kontak-kami #send-email {
+    font-family: Adam;
+    color: seagreen;
+}
+
+
+.kontak-kami #content {
+    font-family: 'HelvLight Regular';
+    font-size: 18px;
+}
+    
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+input,textarea {
+    width : 400px;
+    margin: 0;   
+    box-sizing: border-box;
+    border-color: seagreen;
+    border-left-style: solid;
+    border-top-style: solid;
+}
+
+input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+}
+
+textarea {
+    border-width: 2px;
+}
+
+#required {
+    color: #ff4747;
+    size: 5px;
+    white-space: nowrap ;
 }

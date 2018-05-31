@@ -145,28 +145,37 @@ HMIK UI 2017 memiliki harapan terhadap lingkungan Ilmu Komunikasi UI yang dapat 
 
 
 <div class="kontak-kami">
-    <!--
-    <div class="video-section">
-        <video autoplay muted loop id="videoHMIK" poster="videoGIF.gif">
-            <source src="{{ asset('video/Video Profile HMIK UI 2017.mp4')}}" type="video/mp4">
-        </video>
-    </div>
--->
-    <div class="container">
-        <hr/>
-        <div class="icons row">
-            <a class="col-3 text-center" href="https://twitter.com/hmikui" target="_blank">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a class="col-3 text-center" href="https://www.facebook.com/hmikui" target="_blank">
-                <i class="fab fa-facebook-f col-3"></i>
-            </a>
-            <a class="col-3 text-center" href="https://www.instagram.com/hmikui/" target="_blank">            
-                <i class="fab fa-instagram col-3"></i>
-            </a>
-            <a class="col-3 text-center" href="https://www.youtube.com/channel/UC5r8AhjIu9XN_qricB_Ux2w" target="_blank">            
-                <i class="fab fa-youtube col-3"></i>
-            </a>
+   
+    <div class="row">
+        <div class="column">
+            <h1 class="title">KONTAK KAMI</h1>
+            
+            <div id="content">
+                <h5>Himpunan Mahasiswa Ilmu Komunikasi<br/><br/></h5>
+                <p>Sekretariat HMIK Universitas Indonesia<br/>
+                    Gedung Komunikasi Fakultas Ilmu Sosial dan Politik<br/>
+                    Ilmu Politik Universitas Indonesia Lt. 3<br/>
+                    Depok | 16424 | Ph. (021) 78849014| Fax.<br/>
+                    (021) 78840919
+                </p>
+                <p>
+                    Website     : www.hmik.fisip.ui.ac.id<br/>
+                    Twitter     : @hmikui<br/>
+                    Instagram   : @hmikui<br/>
+                    Facebook    : HMIK UI<br/>
+                    Youtube     : HMIK UI
+                </p>
+            </div>
+        </div>
+    <div class="column">
+        <h1 id="send-email">SEND US MAIL!</h1>
+        <div id="form">
+            <form>
+                <span id="required">*</span>NAME :<input type="text" name="NAME"><br>
+                <span id="required">*</span>E-MAIL :<input type="email" name="E-MAIL"><br>
+                <span id="required">*</span>SUBJECT :<input type="text" name="SUBJECT"><br>
+            </form>
+            <span id="required">*</span>MESSAGE :<textarea name="comment" form="usrform"></textarea>
         </div>
     </div>
 </div>
