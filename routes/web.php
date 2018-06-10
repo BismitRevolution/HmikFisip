@@ -44,3 +44,20 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
   	//article routes
 	Route::resource('/articles', 'ArticleController');
 });
+
+Route::get('/literatur',function() {
+	echo 'Literatur';
+});
+
+Route::get('/visual',function() {
+	echo 'Visual';
+});
+
+Route::get('/video',function() {
+	echo 'Video';
+});
+
+Route::get('/musik',function() {
+	echo 'Musik';
+});
+?>

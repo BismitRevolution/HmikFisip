@@ -168,8 +168,8 @@
     margin-top: 50px;
     margin-bottom: 100px;
     padding-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 .kontak-kami .title {
     font-family: Benton, 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -232,4 +232,28 @@ textarea {
     color: #ff4747;
     size: 5px;
     white-space: nowrap ;
+}
+
+.ruang-estetika {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding-top: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.ruang-estetika .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 30%;
+}
+
+.cubes {
+    margin-top: 3%;
+}
+
+.cubes a {
+    margin-left: 2%;
+    margin-right: 2%;
 }
