@@ -45,19 +45,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 	Route::resource('/articles', 'ArticleController');
 });
 
-Route::get('/literatur',function() {
-	echo 'Literatur';
-});
-
-Route::get('/visual',function() {
-	echo 'Visual';
-});
-
-Route::get('/video',function() {
-	echo 'Video';
-});
-
-Route::get('/musik',function() {
-	echo 'Musik';
-});
+Route::get('/literatur', 'PageController@index')->name('literatur');
+Route::get('/visual', 'PageController@index')->name('visual');
+Route::get('/vid', 'PageController@index')->name('vid');
+Route::get('/musik', 'PageController@index')->name('musik');
 ?>

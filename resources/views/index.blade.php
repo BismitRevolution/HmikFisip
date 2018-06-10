@@ -55,25 +55,25 @@ HMIK UI 2017 memiliki harapan terhadap lingkungan Ilmu Komunikasi UI yang dapat 
         <img src="{{ asset('img/header.png') }}" alt="Ruang Estetika" class="center">
     </div>
     <div class="cubes">
-        <a class="col-3" href="{{ route('literatur')}}" target="_blank">
+        <a class="col-3" href="{{ route('literatur') }}" target="_blank">
             <img id="lit" src="{{ asset('img/kubus-literatur.png') }}" width="20%"
             onmouseover="this.src='{{ asset('img/kubus-literatur-clicked.png') }}'"
             onmouseout="this.src='{{ asset('img/kubus-literatur.png') }}'"
             >
         </a>
-        <a class="col-3" href="https://www.facebook.com/hmikui" target="_blank">
+        <a class="col-3" href="{{ route('visual') }}" target="_blank">
             <img id="vis" src="{{ asset('img/kubus-visual.png') }}" width="20%"
             onmouseover="this.src='{{ asset('img/kubus-visual-clicked.png') }}'"
             onmouseout="this.src='{{ asset('img/kubus-visual.png') }}'"
             >
         </a>
-        <a class="col-3" href="https://www.facebook.com/hmikui" target="_blank">
+        <a class="col-3" href="{{ route('vid') }}" target="_blank">
             <img id="vid" src="{{ asset('img/kubus-video-.png') }}" width="20%"
             onmouseover="this.src='{{ asset('img/kubus-video-clicked.png') }}'"
             onmouseout="this.src='{{ asset('img/kubus-video-.png') }}'"
             >
         </a>
-        <a class="col-3" href="https://www.facebook.com/hmikui" target="_blank">
+        <a class="col-3" href="{{ route('musik') }}" target="_blank">
             <img id="mus" src="{{ asset('img/kubus-musik-.png') }}" width="20%"
             onmouseover="this.src='{{ asset('img/kubus-musik-clicked.png') }}'"
             onmouseout="this.src='{{ asset('img/kubus-musik-.png') }}'"
