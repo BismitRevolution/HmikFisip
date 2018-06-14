@@ -102,7 +102,12 @@
 
 @media (max-width: 981px) {
 
+    .scrolled-navbar {
+        padding-top: 0 !important;
+    }
+
     .new-navbar .navbar-brand img {
+        display: none !important;
         position: inherit;
     }
 
