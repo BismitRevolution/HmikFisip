@@ -26,6 +26,8 @@
         <!-- <link rel="stylesheet" href="{{ asset('css/vendor/foundation.min.css') }}"> -->
         <!-- Lightbox -->
         <!-- <link rel="stylesheet" href="{{ asset('css/vendor/lightbox.min.css') }}"> -->
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="{{ asset('css/vendor/fontawesome-all.css') }}">
         <!-- Basic Style -->
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <!-- Navbar Style -->
@@ -35,7 +37,6 @@
         <!-- Default Style -->
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         @yield('extra-css')
-        <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
         <!-- Google Open Sans -->
         <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"> -->
