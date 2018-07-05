@@ -21,6 +21,9 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+Route::get('/contact', 'ContactController@getContact')->name('contact.get');
+Route::post('/contact', 'ContactController@postContact')->name('contact.post');
+
 //this is resource controller, if you want to make a CRUD system, just look at it
 Route::resource('/template', 'TemplateController');
 
