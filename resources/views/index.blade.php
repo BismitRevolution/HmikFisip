@@ -7,29 +7,12 @@
 @endsection
 
 @section('content')
-<<<<<<< HEAD
 <div class="header-section" id="header">
     <div class="hmik-logo">
         <a class="js-scroll-trigger" href="#header">
             <img class="row" src="{{ asset('img/logo.png') }}" alt="Logo HMIK" id="header-logo">
             <img class="row" src="{{ asset('img/logo-word.png') }}" alt="HMIK FISIP UI" id="header-logo-word">
         </a>
-||||||| merged common ancestors
-<div class="masthead">
-    <div class="container">
-        <div class="intro-text">
-            <div class="intro-heading text-uppercase">HMIK UI 2018</div>
-            <div class="intro-lead-in">Sinergis, Dekat, Berkelanjutan</div>
-        </div>
-=======
-
-<div class="masthead">
-    <div class="container">
-        <div class="intro-text">
-            <div class="intro-heading text-uppercase">HMIK UI 2018</div>
-            <div class="intro-lead-in">Sinergis, Dekat, Berkelanjutan</div>
-        </div>
->>>>>>> master
     </div>
     <img src="{{ asset('img/header-photo.jpg') }}" alt="Foto HMIK FISIP UI" class="row col-12" id="header-photo">
 </div>
