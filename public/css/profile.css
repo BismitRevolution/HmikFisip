@@ -1,0 +1,35 @@
+.profile-page {
+    font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin-top: 20vw;
+    margin-bottom: 25vw;
+}
+
+.profile-page .nama-divisi {
+    font-size: 32px;
+    color: rgb(180, 220, 180);
+}
+
+.profile-page .judul-teks {
+    font-size: 25px;
+}
+
+.profile-page .desc {
+    position: relative;
+    font-size: 18px;
+}
+
+.profile-page .foto-divisi {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: relative;
+}
+
+.profile-page .footer {
+    margin-bottom: 100px;
+    background-image: url(https://cdn-images-1.medium.com/max/1600/1*UpcrJ27NaHZa3TTZWCyKuA.png);
+    background-size: cover;
+    padding: 70px auto 10px auto;
+    width: 100%;
+    height: 25%;
+}

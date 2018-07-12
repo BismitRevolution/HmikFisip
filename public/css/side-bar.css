@@ -1,0 +1,30 @@
+.side-bar .judul {
+    margin: 10px 10px;
+}
+
+.side-bar .judul p {
+    font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    color: rgb(14, 111, 62);
+}
+
+.side-bar .collapsed-links a {
+    font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
+}
+
+.side-bar .collapsed-links a:hover {
+    color: rgb(14, 111, 62);
+}
+
+.side-bar .btn {
+    border-radius: 50%;
+    background-color: #d04e57;
+    display: block;
+}
+
+.side-bar .logo {
+    color: white;
+}

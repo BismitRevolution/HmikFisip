@@ -34,6 +34,10 @@
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         <!-- Index Style -->
         <link rel="stylesheet" href="{{ asset('css/index.css') }}">
+        <!-- Side Bar Style -->
+        <link rel="stylesheet" href="{{ asset('css/side-bar.css') }}">
+        <!-- Profle Style -->
+        <link rel="stylesheet" href="{{ asset('css/profile.css') }}">
         @yield('extra-css')
 
         <!-- Google Open Sans -->
@@ -78,6 +82,7 @@
         <script type="application/javascript" src="{{ asset('js/_footer.js') }}"></script>
         <script type="application/javascript" src="{{ asset('js/index.js') }}"></script>
         <script type="application/javascript" src="{{ asset('js/img-slider.js') }}"></script>
+        <script type="application/javascript" src="{{ asset('js/side-bar.js') }}"></script>
 
         @yield('extra-js')
 
