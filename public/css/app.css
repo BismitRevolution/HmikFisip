@@ -32,6 +32,21 @@
     src: url('/fonts/Margot-RegularItalic.ttf');
 }
 
+@font-face {
+    font-family: "AvenirLTStd-Book";
+    src: url('/fonts/AvenirLTStd-Book.otf');
+}
+
+@font-face {
+    font-family: "AvenirLTStd-Light";
+    src: url('/fonts/AvenirLTStd-Light.otf');
+}
+
+@font-face {
+    font-family: "AvenirLTStd-Roman";
+    src: url('/fonts/AvenirLTStd-Roman.otf');
+}
+
 .bg-transparent {
     background: rgba(255, 255, 255, 0);
 }

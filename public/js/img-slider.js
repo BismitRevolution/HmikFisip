@@ -1,25 +1,88 @@
-$('#carouselExample').on('slide.bs.carousel', function (e) {
+$(function() {
+    $('#slider').carouFredSel({
+        width: '100%',
+        align: false,
+        items: 9,
+        items: {
+            width: $('#wrapper').width() * 0.05,
+            height: 500,
+            visible: 1,
+            minimum: 1
+        },
+        scroll: {
+            items: 1,
+            timeoutDuration : 5000,
+            onBefore: function(data) {
 
-    /*
-    CC 2.0 License Iatek LLC 2018
-    Attribution required
-    */
+                //	find current and next slide
+                var currentSlide = $('.slide.active', this),
+                    nextSlide = data.items.visible,
+                    _width = $('#wrapper').width();
 
-    var $e = $(e.relatedTarget);
-    var idx = $e.index();
-    var itemsPerSlide = 3;
-    var totalItems = $('.carousel-item').length;
+                //	resize currentslide to small version
+                currentSlide.stop().animate({
+                    width: _width * 0.05
+                });
+                currentSlide.removeClass( 'active' );
 
-    if (idx >= totalItems-(itemsPerSlide-1)) {
-        var it = itemsPerSlide - (totalItems - idx);
-        for (var i=0; i<it; i++) {
-            // append slides to end
-            if (e.direction=="left") {
-                $('.carousel-item').eq(i).appendTo('.carousel-inner');
+                //	hide current block
+                data.items.old.add( data.items.visible ).find( '.slide-block' ).stop().fadeOut();
+
+                //	animate clicked slide to large size
+                nextSlide.addClass( 'active' );
+                nextSlide.stop().animate({
+                    width: _width * 0.6
+                });
+            },
+            onAfter: function(data) {
+                //	show active slide block
+                data.items.visible.last().find( '.slide-block' ).stop().fadeIn();
             }
-            else {
-                $('.carousel-item').eq(0).appendTo('.carousel-inner');
-            }
+        },
+        onCreate: function(data){
+
+            //	clone images for better sliding and insert them dynamacly in slider
+            var newitems = $('.slide',this).clone( true ),
+                _width = $('#wrapper').width();
+
+            $(this).trigger( 'insertItem', [newitems, newitems.length, false] );
+
+            //	show images
+            $('.slide', this).fadeIn();
+            $('.slide:first-child', this).addClass( 'active' );
+            $('.slide', this).width( _width * 0.05
+             );
+
+            //	enlarge first slide
+            $('.slide:first-child', this).animate({
+                width: _width * 0.6
+            });
+
+            //	show first title block and hide the rest
+            $(this).find( '.slide-block' ).hide();
+            $(this).find( '.slide.active .slide-block' ).stop().fadeIn();
         }
-    }
+    });
+
+    //	Handle click events
+    $('#slider').children().click(function() {
+        $('#slider').trigger( 'slideTo', [this] );
+    });
+
+    //	Enable code below if you want to support browser resizing
+    $(window).resize(function(){
+
+        var slider = $('#slider'),
+            _width = $('#wrapper').width();
+
+        //	show images
+        slider.find( '.slide' ).width( _width * 0.05 );
+
+        //	enlarge first slide
+        slider.find( '.slide.active' ).width( _width * 0.6 );
+
+        //	update item width config
+        slider.trigger( 'configuration', ['items.width', _width * 0.05] );
+    });
+
 });
