@@ -11,15 +11,42 @@
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/test', function () {
+    return view('test');
+});
+
+Route::get('/profil/pengurus-inti', function () {
+    return view('pengurus-inti');
+});
+
+Route::get('/profil/humas', function () {
+    return view('profiles/division/humas');
+});
+
+Route::get('/profil/advokasi-dan-kemahasiswaan', function () {
+    return view('advokasi-dan-kemahasiswaan');
+});
+
+Route::get('/profil/keuangan', function () {
+    return view('keuangan');
+});
+
+Route::get('/profil/minat-dan-bakat', function () {
+    return view('minat-dan-bakat');
+});
+
+Route::get('/profil/psdm', function () {
+    return view('psdm');
+});
 
 Route::get('/', 'PageController@index')->name('index');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/contact', 'ContactController@getContact')->name('contact.get');
+Route::post('/contact', 'ContactController@postContact')->name('contact.post');
 
 //this is resource controller, if you want to make a CRUD system, just look at it
 Route::resource('/template', 'TemplateController');

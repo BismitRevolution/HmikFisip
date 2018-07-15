@@ -1,0 +1,525 @@
+.header-section {
+    margin-bottom: 70px;
+}
+
+.header-section .hmik-logo {
+    display: block;
+    position: relative;
+    margin: 80px auto 30px;
+}
+
+#header-logo {
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header-logo-word {
+    width: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header-photo {
+    display: block;
+    margin: 10px auto;
+    box-shadow: 20px 20px rgb(243, 207, 506);
+    -moz-box-shadow: 20px 20px rgb(243, 207, 50);
+    -webkit-box-shadow: 20px 20px rgb(243, 207, 50);
+    -o-box-shadow: 20px 20px rgb(243, 207, 50);
+    width: 80vw;
+}
+
+.tentang-kami-section {
+    margin: 60px 0 20px;
+}
+
+.tentang-kami-section .about-title h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 4vw;
+    color: white;
+    background-color: rgb(14, 111, 62);
+    text-align: right;
+    padding: 230px 30px 15px 0;
+}
+
+.tentang-kami-section .desc1 h4, .tentang-kami-section .desc1 p, .tentang-kami-section .desc1 li {
+    font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0 20px;
+    font-size: 28px;
+}
+
+.tentang-kami-section .desc2 h4 {
+    font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0 20px;
+    font-size: 28px;
+}
+
+.tentang-kami-section .desc2 p {
+    font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0 20px;
+    font-size: 15px;
+}
+
+.tentang-kami-section .desc3 h4 {
+    font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0 20px;
+    font-size: 28px;
+}
+
+#struktur-organisasi {
+    margin: 0 20px;
+    width: 690px;
+}
+
+.tentang-kami-section .desc4 h4 {
+    font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0 20px;
+    font-size: 28px;
+}
+
+.tentang-kami-section .desc4 p {
+    font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0 20px;
+    font-size: 15px;
+}
+
+.tentang-kami-section .nav {
+    width: 100%;
+    list-style-type: none;
+    display: table;
+    margin-right: 10px;
+    padding: 0;
+    border-bottom: 5px solid rgb(14, 111, 62);
+}
+
+.tentang-kami-section .nav-item {
+    padding: 5px 5px;
+    display: table-cell;
+}
+
+.tentang-kami-section .nav-item a {
+    font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: rgb(14, 111, 62);
+    font-size: 20px;
+    letter-spacing: 0.5vw;
+}
+
+.tentang-kami-section .nav-item a:hover {
+    transition: 1s;
+    color: rgb(200, 230, 200);
+}
+
+.tentang-kami-section .more-click {
+    margin-top: 550px;
+}
+
+.tentang-kami-section .more-click a {
+    color: red;
+    text-align: right;
+}
+
+.profil-section .profile-title h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 4vw;
+    color: white;
+    background-color: rgb(14, 111, 62);
+    text-align: right;
+    padding: 20px;
+}
+
+.profil-section .div-img {
+    margin: 1vw;
+}
+
+.profil-section .divisi {
+    font-family: AvenirLTStd-Book, Arial, sans-serif;
+    margin: 0 20px 0;
+    width: 18vw;
+    height: 18vw;
+    font-size: 1.75vw;
+}
+
+.profil-section .image-profile {
+    width: 18vw;
+    height: 18vw;
+}
+
+.profil-section .ex-desc {
+    position: absolute;
+    bottom: 0;
+    padding: 0.3vw;
+    background: rgba(0, 100, 0, 0.6); /* Black see-through */
+    width: 18vw;
+    height: 18vw;
+    opacity:0;
+    color: white;
+    vertical-align: middle;
+}
+
+.profil-section .desc {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.profil-section .divisi:hover .ex-desc {
+    transition: 1.5s ease;
+    opacity: 1;
+}
+
+.profil-section .jenis-divisi {
+    font-size: 1.8vw;
+}
+
+.profil-section .desc-divisi {
+    font-size: 1.1vw;
+    letter-spacing: 0.2px;
+    line-height: 2px;
+}
+
+.artikel-section {
+    margin: 30px 0;
+}
+
+.artikel-section .article-title {
+    display: table;
+    vertical-align: bottom;
+    z-index: -99;
+    position: relative;
+}
+
+.artikel-section .article-title h3 {
+    display: table-cell;
+    vertical-align: bottom;
+    width: auto;
+    height: 30vw;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 4vw;
+    color: white;
+    background-color: rgb(14, 111, 62);
+    padding: 0 0 7px 17px;
+}
+
+.artikel-section .container {
+    margin: 0 !important;
+}
+
+.article-section .carousel-place {
+    position: relative;
+    z-index: 99;
+}
+
+.MultiCarousel {
+    float: left;
+    overflow: hidden;
+    width: 120%;
+    height: 100%;
+    position:relative;
+    left: -20%;
+    right: 20%;
+}
+
+.MultiCarousel .MultiCarousel-inner {
+    height: 100%;
+    transition: 1s ease all;
+    float: left;
+}
+
+.MultiCarousel .MultiCarousel-inner .item {
+    float: left;
+    height: 100%;
+}
+
+.MultiCarousel .MultiCarousel-inner .item > div {
+    height: 100%;
+    text-align: center;
+    color:#666;
+}
+
+.MultiCarousel .leftLst, .MultiCarousel .rightLst {
+    position:absolute;
+    top:calc(50% - 20px);
+    background: #d0cfcf;
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Helvetica;
+    color: #ffffff;
+    font-size: 1vw;
+    padding: 0 2.5vw 0 2.5vw;
+}
+
+.MultiCarousel .leftLst {
+    left:15%;
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari 3-8 */
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.MultiCarousel .rightLst {
+    right: -1.5%;
+    -ms-transform: rotate(-90deg); /* IE 9 */
+    -webkit-transform: rotate(-90deg); /* Safari 3-8 */
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+.MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over {
+    pointer-events: none;
+    background:#ccc;
+}
+
+.artikel-section .pad10 {
+    font-family: AvenirLTStd-Book, Arial, sans-serif;
+    font-size: 1.5vw;
+    width: 100%;
+    height: 100%;
+}
+
+.artikel-section .image-profile {
+    float: left;
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
+}
+
+.artikel-section .ex-desc {
+    left: 50%;
+    position: relative;
+    bottom: 0;
+    background: rgba(0, 100, 0, 0.6); /* Black see-through */
+    width: 100%;
+    height: 100%;
+    opacity:0;
+    color: white;
+    vertical-align: middle;
+    text-align: left;
+    padding: 20px;
+}
+
+.artikel-section .desc {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.artikel-section .pad10:hover .ex-desc {
+    transition: 1.5s ease;
+    opacity: 1;
+}
+
+.artikel-section .judul-event {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.7vw;
+}
+
+.artikel-section .read-more {
+    color: white;
+}
+
+@media screen and (max-width: 991px) {
+
+    .header-section {
+        margin-top: 100px !important;
+    }
+
+    .tentang-kami-section .nav-item a {
+        font-size: 15px !important;
+        display: block !important;
+    }
+
+    .tentang-kami-section .nav {
+        display: block !important;
+    }
+
+    .tentang-kami-section .desc1 h4, .tentang-kami-section .desc1 p, .tentang-kami-section .desc1 li {
+        font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin: 0 10px;
+        font-size: 15px !important;
+    }
+
+    .tentang-kami-section .desc2 h4 {
+        font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin: 0 10px;
+        font-size: 15px !important;
+    }
+
+    .tentang-kami-section .desc3 h4 {
+        font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin: 0 10px;
+        font-size: 15px !important;
+    }
+
+    #struktur-organisasi {
+        margin: auto;
+        width: 500px;
+    }
+
+    .tentang-kami-section .desc4 h4 {
+        font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        margin: 0 10px;
+        font-size: 15px !important;
+    }
+
+    .tentang-kami-section .more-click {
+        margin-top: 10px !important;
+        margin-left: 10px !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    .tentang-kami-section .about-title h3 {
+        padding: 20px 30px 15px 7vw;
+    }
+
+    .tentang-kami-section .nav-item a {
+        font-size: 15px !important;
+        display: block !important;
+    }
+
+    .tentang-kami-section .nav {
+        display: block !important;
+    }
+
+    .profil-section .divisi {
+        width: 35vw !important;
+        height: 35vw !important;
+    }
+
+    .profil-section .image-profile {
+        width: 35vw !important;
+        height: 35vw !important;
+    }
+
+    .profil-section .ex-desc {
+        margin-left: 35vw;
+        height: 35vw;
+        width: auto;
+    }
+
+    .profil-section .jenis-divisi {
+        font-size: 3.2vw;
+    }
+
+    .profil-section .desc-divisi {
+        font-size: 2.7vw;
+    }
+
+    .artikel-section .article-title h3 {
+        height: 100%;
+        padding: 20px;
+    }
+
+    .artikel-section .image-profile {
+        position: relative;
+        width: 40vw;
+        height: 40vw;
+        left: 50%;
+    }
+
+    .artikel-section .ex-desc {
+        position: relative;
+        background: rgba(0, 100, 0, 0.6); /* Black see-through */
+        height: 40vw;
+        font-size: 1.9vw;
+        padding: 10px;
+    }
+
+    .artikel-section .desc {
+        height: 40vw;
+        top: -40%;
+        transform: translateY(50%);
+    }
+
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst {
+        position:absolute;
+        top:calc(65% - 35px);
+        font-size: 2vw;
+        padding: 0 3vw 0 3vw;
+    }
+
+    .MultiCarousel .rightLst {
+        right: 0%;
+    }
+
+    .MultiCarousel .leftLst {
+        left: 16%;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    #header-logo {
+        width: 80px;
+    }
+
+    #header-logo-word {
+        width: 80px;
+    }
+
+    #header-photo {
+        box-shadow: 8px 8px rgb(243, 207, 506);
+        -moz-box-shadow: 8px 8px rgb(243, 207, 50);
+        -webkit-box-shadow: 8px 8px rgb(243, 207, 50);
+        -o-box-shadow: 8px 8px rgb(243, 207, 50);
+    }
+
+    .tentang-kami-section .nav-item a {
+        margin: 1px !important;
+        padding: 0 !important;
+        letter-spacing: 0 !important;
+        font-size: 15px !important;
+    }
+
+    #struktur-organisasi {
+        margin-left: auto;
+        max-width: 90vw !important;
+    }
+
+    .artikel-section .image-profile {
+        position: relative;
+        width: 50vw;
+        height: 50vw;
+        left: 40%;
+    }
+
+    .artikel-section .ex-desc {
+        position: relative;
+        background: rgba(0, 100, 0, 0.6); /* Black see-through */
+        height: 50vw;
+        font-size: 2.8vw;
+        padding: 10px;
+        left: -60%;
+    }
+
+    .artikel-section .desc {
+        height: 50vw;
+        top: -40%;
+        transform: translateY(50%);
+    }
+
+    .artikel-section .judul-event {
+        font-size: 3vw;
+    }
+}
+
+@media screen and (max-width: 382px) {
+    #header-logo {
+        width: 50px;
+        margin-top: 10px;
+    }
+
+    #header-logo-word {
+        width: 50px;
+    }
+
+    .tentang-kami-section .nav-item a {
+        font-size: 10px !important;
+    }
+
+    #struktur-organisasi {
+        margin: auto;
+    }
+}
