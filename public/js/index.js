@@ -9,6 +9,8 @@ $( "#judul-hmik" ).hover(
 $( "#judul-hmik" ).off( "mouseenter mouseleave" );
 
 $(document).ready(function () {
+    $("#pojok-mahasiswa img").height($("#pojok-mahasiswa img").width());
+
     var itemsMainDiv = ('.MultiCarousel');
     var itemsDiv = ('.MultiCarousel-inner');
     var itemWidth = "";

@@ -180,7 +180,29 @@
     line-height: 2px;
 }
 
-.artikel-section {
+#pojok-mahasiswa {
+    padding-bottom: 20px;
+}
+
+#pojok-mahasiswa img {
+    padding-top: 35px;
+    padding-bottom: 25px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 200px;
+}
+
+#pojok-mahasiswa .title {
+    font-family: "Roboto-Bold";
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+#pojok-mahasiswa .paragraph {
+    font-family: "Roboto-Thin";
+    font-weight: bold;
+    font-size: 0.95rem;
+    margin-top: -5px;
 }
 
 .artikel-section .article-title {

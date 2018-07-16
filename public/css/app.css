@@ -42,7 +42,17 @@
     src: url('/fonts/BentonSans-ExtraCondensed-Black.otf');
 }
 
-@@font-face {
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url('/fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-Thin";
+    src: url('/fonts/Roboto-Thin.ttf');
+}
+
+@font-face {
     font-family: "AvenirLTStd-Book";
     src: url('/fonts/AvenirLTStd-Book.otf');
 }
@@ -103,6 +113,26 @@
 
 .black {
     color: black !important;
+}
+
+.green-dark {
+    color: var(--color-green-dark) !important;
+}
+
+.green-medium {
+    color: var(--color-green-medium) !important;
+}
+
+.green-light {
+    color: var(--color-green-light) !important;
+}
+
+.yellow-dark {
+    color: var(--color-yellow-dark) !important;
+}
+
+.yellow-light {
+    color: var(--color-yellow-light) !important;
 }
 
 .blue-semi-light {

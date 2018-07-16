@@ -89,7 +89,7 @@
 #navbar-main .navbar-nav .nav-item .nav-link {
     padding: 0.5em 1.2vw !important;
     font-size: 0.9vmax;
-    font-weight: 400;
+    font-weight: lighter;
     letter-spacing: 1px;
     color: green;
     font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;

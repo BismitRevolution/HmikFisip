@@ -222,6 +222,38 @@
     </div>
 </div>
 
+<div class="text-center green-dark" style="margin-top: 35px;">
+    <h1 style="font-family: 'Benton'; letter-spacing: 5px; word-spacing: 10px; text-shadow: -2px 2px var(--color-yellow-dark);">POJOK MAHASISWA</h1>
+</div>
+
+<div id="pojok-mahasiswa" class="bg-green-dark white">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 row text-center" style="display: block;">
+                <img class="col-12" src="{{ asset('img/komunikasi-101.png') }}" alt="">
+                <div class="col-12">
+                    <h5 class="title">KOMUNIKASI 101</h5>
+                    <p class="paragraph">KOM 101 hadir untuk membantu kalian dengan menyediakan informasi-informasi seputar komunikasi, perkuliahan, dan lain-lain.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 row text-center" style="display: block;">
+                <img class="col-12" src="{{ asset('img/portal-keilmuan.png') }}" alt="">
+                <div class="col-12">
+                    <h5 class="title">PORTAL KEILMUAN</h5>
+                    <p class="paragraph">Portal Keilmuan menyediakan berbagai macam bahan bacaan seperti materi UTS, UAS, hingga bahan bacaan sastra.</p>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 row text-center" style="display: block;">
+                <img class="col-12" src="{{ asset('img/ruang-aspirasi.png') }}" alt="">
+                <div class="col-12">
+                    <h5 class="title">RUANG ASPIRASI</h5>
+                    <p class="paragraph">Ayo, sampaikan aspirasimu melalui Ruang Aspirasi!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 <div class="container ruang-estetika" id="RE">
     <div class="text-center" style="margin-bottom: 45px;">
         <img src="{{ asset('img/header.png') }}" alt="Ruang Estetika" style="max-width: 300px;">
