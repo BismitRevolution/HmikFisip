@@ -46,7 +46,7 @@
 .tentang-kami-section .desc1 h4, .tentang-kami-section .desc1 p, .tentang-kami-section .desc1 li {
     font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     margin: 0 20px;
-    font-size: 28px;
+    font-size: 1rem;
 }
 
 .tentang-kami-section .desc2 h4 {
@@ -101,8 +101,8 @@
 .tentang-kami-section .nav-item a {
     font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: rgb(14, 111, 62);
-    font-size: 20px;
-    letter-spacing: 0.5vw;
+    font-size: 1rem;
+    letter-spacing: 2px;
 }
 
 .tentang-kami-section .nav-item a:hover {
@@ -111,7 +111,8 @@
 }
 
 .tentang-kami-section .more-click {
-    margin-top: 550px;
+    height: 100%;
+    padding-right: 20px;
 }
 
 .tentang-kami-section .more-click a {
@@ -129,7 +130,8 @@
 }
 
 .profil-section .div-img {
-    margin: 1vw;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .profil-section .divisi {
@@ -179,7 +181,6 @@
 }
 
 .artikel-section {
-    margin: 30px 0;
 }
 
 .artikel-section .article-title {

@@ -74,6 +74,6 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 
 Route::get('/literatur', 'PageController@index')->name('literatur');
 Route::get('/visual', 'PageController@index')->name('visual');
-Route::get('/vid', 'PageController@index')->name('vid');
+Route::get('/video', 'PageController@index')->name('video');
 Route::get('/musik', 'PageController@index')->name('musik');
 ?>

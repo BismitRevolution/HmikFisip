@@ -41,19 +41,17 @@
 .kontak-kami .title {
     font-family: Benton, 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: seagreen;
-    
+
 }
 
 .kontak-kami #form {
     font-family: 'HelvLight Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: black;
     font-size: 20px;
-    text-align: right;
-    
 }
 
 .kontak-kami #send-email {
-    font-family: Benton;
+    font-family: "Benton";
     color: seagreen;
 }
 
@@ -61,11 +59,6 @@
 .kontak-kami #content {
     font-family: 'HelvLight Regular';
     font-size: 18px;
-}
-    
-.column {
-    float: left;
-    width: 50%;
 }
 
 /* Clear floats after the columns */
@@ -75,52 +68,27 @@
     clear: both;
 }
 
-
-input,textarea {
-    width : 400px;
-    margin: 0;   
+input, textarea {
     box-sizing: border-box;
-    border-color: seagreen;
+    border-color: seagreen !important;
     border-left-style: solid;
     border-top-style: solid;
+    padding-left: 8px !important;
+    padding-right: 8px !important;
 }
 
-input {
-    margin-top: 5px;
-    margin-bottom: 5px;
-    margin-left: 5px;
+label {
+    text-align: right;
+    padding-right: 20px !important;
 }
 
-textarea {
-    border-width: 2px;
-}
-
-#required {
+.required {
     color: #ff4747;
     size: 5px;
-    white-space: nowrap ;
+    white-space: nowrap;
 }
 
 .ruang-estetika {
-    margin-top: 50px;
-    margin-bottom: 100px;
-    padding-top: 20px;
-    margin-left: 100px;
-    margin-right: 100px;
-}
-.ruang-estetika .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 30%;
-    height: 30%;
-}
-
-.cubes {
-    margin-top: 3%;
-}
-
-.cubes a {
-    margin-left: 2%;
-    margin-right: 2%;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }

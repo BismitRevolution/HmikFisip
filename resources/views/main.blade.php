@@ -77,7 +77,7 @@
         <script type="application/javascript" src="{{ asset('js/vendor/jquery.carouFredSel.js') }}"></script>
 
         <!-- FontAwesome -->
-        <script defer src="{{ asset('js/vendor/fontawesome-all.min.js') }}"></script>
+        <script defer src="{{ asset('js/vendor/fontawesome-all.js') }}"></script>
 
         <!-- Customization -->
         <script type="application/javascript" src="{{ asset('js/_header.js') }}"></script>
