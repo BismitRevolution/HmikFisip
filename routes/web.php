@@ -72,8 +72,8 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 	Route::resource('/articles', 'ArticleController');
 });
 
-Route::get('/literatur', 'PageController@index')->name('literatur');
-Route::get('/visual', 'PageController@index')->name('visual');
-Route::get('/video', 'PageController@index')->name('video');
-Route::get('/musik', 'PageController@index')->name('musik');
+Route::get('/literatur', 'PageController@literatur')->name('literatur');
+Route::get('/visual', 'PageController@visual')->name('visual');
+Route::get('/video', 'PageController@video')->name('video');
+Route::get('/musik', 'PageController@musik')->name('musik');
 ?>

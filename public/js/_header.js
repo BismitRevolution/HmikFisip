@@ -1,8 +1,8 @@
-var navbar = $(".new-navbar");
-    navContainer = $(".container-fluid")
-    navLogo = $("#nav-logo");
-    navLogoWord = $('#nav-logo-word');
-    navLogoBackground = $('#logo');
+var navbar = $("#navbar-on .new-navbar");
+    navContainer = $("#navbar-on .container-fluid")
+    navLogo = $("#navbar-on #nav-logo");
+    navLogoWord = $('#navbar-on #nav-logo-word');
+    navLogoBackground = $('#navbar-on #logo');
     //yourHeader = $('.top-container').height();
 
 $(window).scroll(function() {
