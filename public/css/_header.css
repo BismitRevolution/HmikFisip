@@ -61,6 +61,7 @@
 }
 
 .new-navbar .nav-item {
+    vertical-align: middle;
     padding: 0 15px;
     display: table-cell;
 }
