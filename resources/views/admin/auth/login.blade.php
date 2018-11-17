@@ -1,5 +1,7 @@
 @extends('admin.layout.admin-master')
 
+@section('title', 'Admin Login')
+
 @section('content')
 <div class="container" style="margin-top: 165px;">
     <div class="row">
