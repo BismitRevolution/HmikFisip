@@ -1,95 +1,102 @@
 <!DOCTYPE html>
-<html lang="{{ config('app.locale') }}" dir="ltr">
-    <head>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        <meta charset="utf-8">
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-        <meta name="description" content="Description of the page">
+    <title>Dashboard @yield('title')</title>
+    <!-- Bootstrap core CSS-->
+    <link href="{{ asset('css/vendor/bootstrap-v4.0.min.css') }}" rel="stylesheet">
+    <!-- Custom fonts for this template-->
+    <link href="{{ asset('css/vendor/fontawesome-all.css') }}" rel="stylesheet" type="text/css">
+    <!-- Custom styles for this template-->
+    <link href="{{ asset('css/admin/sb-admin.min.css') }}" rel="stylesheet">
+    @yield('extra-css')
+</head>
 
-        <!-- Apple Devices -->
-        <!-- <link rel="apple-touch-icon" href="/custom-icon.png"> -->
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+<body id="page-top">
+    @include('admin.layout.header')
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <ul class="sidebar navbar-nav">
+            <li id="nav-dashboard" class="nav-item active">
+                <a class="nav-link" href="{{ route('admin.home') }}">
+                    <i class="fas fa-fw fa-tachometer-alt"></i>
+                    <span>Dashboard</span>
+                </a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-fw fa-folder"></i>
+            <span>Pages</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="pagesDropdown">
+        <h6 class="dropdown-header">Login Screens:</h6>
+        <a class="dropdown-item" href="login.html">Login</a>
+        <a class="dropdown-item" href="register.html">Register</a>
+        <a class="dropdown-item" href="forgot-password.html">Forgot Password</a>
+        <div class="dropdown-divider"></div>
+        <h6 class="dropdown-header">Other Pages:</h6>
+        <a class="dropdown-item" href="404.html">404 Page</a>
+        <a class="dropdown-item" href="blank.html">Blank Page</a>
+    </div>
+</li> -->
+@yield('sidebar')
+</ul>
 
-        <!-- Online Bootstrap-->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <!-- Normalize CSS -->
-        <link rel="stylesheet" href="{{ asset('css/vendor/normalize.css') }}">
-        <!-- Bootstrap -->
-        <link rel="stylesheet" href="{{ asset('css/vendor/bootstrap-v4.0.min.css') }}">
-        <!-- Foundation ZURB -->
-        <!-- <link rel="stylesheet" href="{{ asset('css/vendor/foundation.min.css') }}"> -->
-        <!-- Lightbox -->
-        <!-- <link rel="stylesheet" href="{{ asset('css/vendor/lightbox.min.css') }}"> -->
-        <!-- Font Awesome -->
-        <link rel="stylesheet" href="{{ asset('css/vendor/fontawesome-all.css') }}">
-        <!-- Basic Style -->
-        <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-        <!-- Navbar Style -->
-        <link rel="stylesheet" href="{{ asset('css/_header.css') }}">
-        <!-- Footer Style -->
-        <link rel="stylesheet" href="{{ asset('css/_footer.css') }}">
-        <!-- Default Style -->
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
-        <!-- Index Style -->
-        <!-- <link rel="stylesheet" href="{{ asset('css/index.css') }}"> -->
-        <!-- Admin Style -->
-        <link rel="stylesheet" href="{{ asset('css/admin/admin.css') }}">
-        <!-- Side Bar Style -->
-        <!-- <link rel="stylesheet" href="{{ asset('css/side-bar.css') }}"> -->
-        <!-- Profle Style -->
-        <!-- <link rel="stylesheet" href="{{ asset('css/profile.css') }}"> -->
-        @yield('extra-css')
-        <!-- Google Open Sans -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-        <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-
-        <title>@yield('title')</title>
-    </head>
-    <body>
-        @include('layouts._header')
-        <div class="">
+<div id="content-wrapper">
+    <div class="container-fluid">
+        @yield('breadcrumb')
         @yield('content')
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- Scroll to Top Button-->
+    <a class="scroll-to-top rounded" href="#page-top">
+        <i class="fas fa-angle-up"></i>
+    </a>
+    
+    <!-- Logout Modal-->
+    <div class="modal fade" id="logoutModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Ready to Leave?</h5>
+                    <button class="close" type="button" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">Select "Logout" below if you are ready to end your current session.</div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" type="button" data-dismiss="modal">Cancel</button>
+                    <a href="{{ url('/admin/logout') }}"
+                    onclick="event.preventDefault();
+                    document.getElementById('logout-form').submit();">
+                    Logout
+                </a>
+
+                <form id="logout-form" action="{{ url('/admin/logout') }}" method="POST" style="display: none;">
+                    {{ csrf_field() }}
+                </form>
+
+            </div>
         </div>
+    </div>
+</div>
 
-        <!-- JQuery -->
-        <script type="application/javascript" src="{{ asset('js/vendor/jquery-3.2.1.min.js') }}"></script>
-        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-        <!-- Bootstrap -->
-        <script type="application/javascript" src="{{ asset('js/vendor/bootstrap-v4.0.min.js') }}"></script>
-        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
-        <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-
-        <!-- PopperJS -->
-        <!-- <script type="application/javascript" src="https://unpkg.com/popper.js"></script> -->
-
-        <!-- TooltipJS -->
-        <!-- <script type="application/javascript" src="https://unpkg.com/tooltip.js"></script> -->
-
-        <!-- Foundation ZURB -->
-        <!-- <script type="application/javascript" src="{{ asset('js/vendor/what-input.js') }}"></script> -->
-        <!-- <script type="application/javascript" src="{{ asset('js/vendor/foundation.min.js') }}"></script> -->
-        <!-- <script type="application/javascript" src="{{ asset('js/vendor/jquery.carouFredSel.js') }}"></script> -->
-
-        <!-- FontAwesome -->
-        <script defer src="{{ asset('js/vendor/fontawesome-all.min.js') }}"></script>
-
-        <!-- Customization -->
-        <script type="application/javascript" src="{{ asset('js/_header.js') }}"></script>
-        <script type="application/javascript" src="{{ asset('js/_footer.js') }}"></script>
-        <!-- <script type="application/javascript" src="{{ asset('js/index.js') }}"></script> -->
-        <!-- <script type="application/javascript" src="{{ asset('js/img-slider.js') }}"></script> -->
-        <!-- <script type="application/javascript" src="{{ asset('js/side-bar.js') }}"></script> -->
-
-        @yield('extra-js')
-
-        @include('layouts._footer')
-    </body>
+<!-- Bootstrap core JavaScript-->
+<script src="{{ asset('js/vendor/jquery-3.2.1.min.js') }}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="{{ asset('js/vendor/bootstrap-v4.0.min.js') }}"></script>
+<!-- Core plugin JavaScript-->
+<!-- <script src="vendor/jquery-easing/jquery.easing.min.js"></script> -->
+<!-- Page level plugin JavaScript-->
+<!-- <script src="{{ asset('js/vendor/chart.min.js') }}"></script> -->
+<!-- Custom scripts for all pages-->
+<script src="{{ asset('js/admin/sb-admin.min.js') }}"></script>
+@yield('extra-js')
+</body>
 </html>

@@ -54,7 +54,6 @@ Route::resource('/template', 'TemplateController');
 //posts routes
 Route::resource('/posts', 'PostController');
 
-
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 	Route::get('/login', 'AdminAuth\LoginController@showLoginForm')->name('login');
 	Route::post('/login', 'AdminAuth\LoginController@login');
@@ -69,6 +68,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 	Route::get('/password/reset/{token}', 'AdminAuth\ResetPasswordController@showResetForm');
 
   	//article routes
+    Route::get('/article', 'PageController@article')->name('article');
 	Route::resource('/articles', 'ArticleController');
 });
 
