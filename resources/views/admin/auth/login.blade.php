@@ -1,4 +1,4 @@
-@extends('admin.layout.admin-master')
+@extends('main')
 
 @section('title', 'Admin Login')
 
@@ -54,7 +54,7 @@
                         <button type="submit" class="btn btn-success col-md-12">
                             Login
                         </button>
-                        <a class="btn btn-link" href="{{ url('/admin/password/reset') }}" style="font-size: 0.6em;">Forgot password</a>
+                        <!-- <a class="btn btn-link" href="{{ url('/admin/password/reset') }}" style="font-size: 0.6em;">Forgot password</a> -->
                     </form>
                 </div>
             </div>
