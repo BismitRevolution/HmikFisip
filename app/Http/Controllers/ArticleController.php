@@ -24,7 +24,7 @@ class ArticleController extends Controller
                                 ->where('media.article_id', '=', $article->article_id)
                                 ->get();
         }
-        return view('articles.index')->with(['articles'=> $articles]);
+        return view('admin.articles.index')->with(['articles'=> $articles]);
     }
 
     /**
@@ -34,7 +34,7 @@ class ArticleController extends Controller
      */
     public function create()
     {
-        return view('articles.create');
+        return view('admin.articles.create');
     }
 
     /**
@@ -44,7 +44,7 @@ class ArticleController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function store(Request $request)
-    {   
+    {
         $request->validate([
             'title' => 'required|max:255',
             'body' => 'required',
@@ -91,7 +91,7 @@ class ArticleController extends Controller
                     ->where('media.article_id', '=', $article->article_id)
                     ->get();
 
-        return view('articles.show')
+        return view('admin.articles.show')
                     ->with(['article' => $article, 'media' => $media]);
     }
 
@@ -111,7 +111,7 @@ class ArticleController extends Controller
                     ->where('media.article_id', '=', $article->article_id)
                     ->get();
 
-        return view('articles.edit')
+        return view('admin.articles.edit')
                     ->with(['article' => $article, 'media' => $media]);
     }
 
@@ -136,7 +136,7 @@ class ArticleController extends Controller
         $article->save();
 
         return redirect()->route('admin.articles.show', $article->article_id);
-    
+
     }
 
     /**

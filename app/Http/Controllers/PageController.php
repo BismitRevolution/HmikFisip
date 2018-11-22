@@ -13,4 +13,12 @@ class PageController extends Controller
 
         return view('index')->with('articles', $articles);
     }
+
+    public function dashboard() {
+        return view('admin.dashboard');
+    }
+
+    public function article() {
+        return view('admin.articles.index');
+    }
 }
