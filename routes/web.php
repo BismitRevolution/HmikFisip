@@ -11,15 +11,15 @@
 |
 */
 
-Route::get('/test', function () {
-    return view('test');
-});
+// Route::get('/test', function () {
+//     return view('test');
+// });
 
 Route::get('/', 'PageController@index')->name('index');
 
-Auth::routes();
+// Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+// Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/contact', 'ContactController@getContact')->name('contact.get');
 Route::post('/contact', 'ContactController@postContact')->name('contact.post');
@@ -43,14 +43,13 @@ Route::group(['prefix' => 'profile', 'as' => 'profile.'], function () {
     Route::post('/update', 'ProfileController@update')->name('update');
 });
 
-
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 	Route::get('/login', 'AdminAuth\LoginController@showLoginForm')->name('login');
 	Route::post('/login', 'AdminAuth\LoginController@login');
 	Route::post('/logout', 'AdminAuth\LoginController@logout')->name('logout');
 
-	Route::get('/register', 'AdminAuth\RegisterController@showRegistrationForm')->name('register');
-	Route::post('/register', 'AdminAuth\RegisterController@register');
+	// Route::get('/register', 'AdminAuth\RegisterController@showRegistrationForm')->name('register');
+	// Route::post('/register', 'AdminAuth\RegisterController@register');
 
 	Route::post('/password/email', 'AdminAuth\ForgotPasswordController@sendResetLinkEmail')->name('password.request');
 	Route::post('/password/reset', 'AdminAuth\ResetPasswordController@reset')->name('password.email');
@@ -58,6 +57,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
 	Route::get('/password/reset/{token}', 'AdminAuth\ResetPasswordController@showResetForm');
 
   	//article routes
+    Route::get('/article', 'PageController@article')->name('article');
 	Route::resource('/articles', 'ArticleController');
 });
 

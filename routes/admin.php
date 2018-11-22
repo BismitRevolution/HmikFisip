@@ -7,5 +7,6 @@ Route::get('/dashboard', function () {
 
     //dd($users);
 
-    return view('admin.dashboard');
+    return redirect()->route('admin.articles.index');
+    // return view('admin.dashboard');
 })->name('home');
