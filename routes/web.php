@@ -15,30 +15,6 @@ Route::get('/test', function () {
     return view('test');
 });
 
-Route::get('/profil/pengurus-inti', function () {
-    return view('pengurus-inti');
-});
-
-Route::get('/profil/humas', function () {
-    return view('profiles/division/humas');
-});
-
-Route::get('/profil/advokasi-dan-kemahasiswaan', function () {
-    return view('advokasi-dan-kemahasiswaan');
-});
-
-Route::get('/profil/keuangan', function () {
-    return view('keuangan');
-});
-
-Route::get('/profil/minat-dan-bakat', function () {
-    return view('minat-dan-bakat');
-});
-
-Route::get('/profil/psdm', function () {
-    return view('psdm');
-});
-
 Route::get('/', 'PageController@index')->name('index');
 
 Auth::routes();
@@ -53,6 +29,19 @@ Route::resource('/template', 'TemplateController');
 
 //posts routes
 Route::resource('/posts', 'PostController');
+
+Route::group(['prefix' => 'profile', 'as' => 'profile.'], function () {
+    Route::get('/bph', 'ProfileController@indexPI')->name('show.bph');
+    Route::get('/adkesma', 'ProfileController@indexAdkesma')->name('show.adkesma');
+    Route::get('/sosmas', 'ProfileController@indexSosmas')->name('show.sosmas');
+    Route::get('/humas', 'ProfileController@indexHumas')->name('show.humas');
+    Route::get('/keilmuan', 'ProfileController@indexKeilmuan')->name('show.keilmuan');
+    Route::get('/depor', 'ProfileController@indexDepor')->name('show.depor');
+    Route::get('/senbud', 'ProfileController@indexSenbud')->name('show.senbud');
+    Route::get('/psdm', 'ProfileController@indexPSDM')->name('show.psdm');
+    Route::get('/keuangan', 'ProfileController@indexKeuangan')->name('show.keuangan');
+    Route::post('/update', 'ProfileController@update')->name('update');
+});
 
 
 Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {

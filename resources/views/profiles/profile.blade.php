@@ -3,33 +3,39 @@
 @section('content')
 	<div class="container profile-page">
         <div class="row">
-            <div class="col-md-7" "description-section">
+            <div class="col-8" "description-section">
                 <div class="nama-divisi">
-                    @yield('nama-divisi')
+                    {{ $bidang->divisi }}
                 </div>
+				<br>
                 <div class="foto-divisi">
-                    @yield('foto-divisi')
+                    <img src="{{ asset('img/' . $bidang->url_foto) }}" alt="{{ $bidang->divisi }}" class="image-profile">
                 </div>
+				<br>
                 <div class="judul-teks">VISI</div>
+				<br>
                 <div class="desc">
-                    @yield('visi-divisi')
+                    {{ $bidang->visi }}
                 </div>
+				<br>
                 <div class="judul-teks">MISI</div>
+				<br>
                 <div class="desc">
-                    @yield('misi-divisi')
+                    {{ $bidang->misi }}
                 </div>
+				<br>
                 <div class="judul-teks">PROGRAM KERJA</div>
+				<br>
                 <div class="desc">
-                    @yield('proker-divisi')
+                    {{ $bidang->program }}
                 </div>
             </div>
-            <div class="col-md-5">
-                @yield('side-bar')
+            <div class="col-4">
+                @include('profiles.side-bar')
 			</div>
         </div>
-		<div class="footer">
-            Copyright - HMIK UI
-        </div>
     </div>
-
+	<div class="footer text-center">
+		Copyright - HMIK UI
+	</div>
 @endsection
