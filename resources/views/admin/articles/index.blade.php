@@ -12,6 +12,7 @@
 				<thead>
 					<tr>
 						<th>Title</th>
+						<th>Category</th>
 						<th>Content</th>
 						<th>Attachment</th>
 						<th>Created At</th>
@@ -23,6 +24,7 @@
 					@foreach($articles as $article)
 					<tr>
 						<td>{{ $article->title }}</td>
+						<td>{{ $article->category }}</td>
 						<td>{{ substr($article->body, 0, 50) }}{{ strlen($article->body) > 100 ? '....' : '' }}</td>
 						<td>
 							@foreach($article->media as $pic)

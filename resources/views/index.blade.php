@@ -272,28 +272,28 @@
     </div>
     <div class="row">
         <div class="col-6 col-sm-3">
-            <a href="{{ route('literatur') }}" target="_blank" style="width: 100%;">
+            <a href="{{ route('article.category', 'literatur') }}" target="_blank" style="width: 100%;">
                 <img src="{{ asset('img/kubus-literatur.png') }}" style="max-width: 100%; max-height: 100%;"
                 onmouseover="this.src='{{ asset('img/kubus-literatur-clicked.png') }}'"
                 onmouseout="this.src='{{ asset('img/kubus-literatur.png') }}'">
             </a>
         </div>
         <div class="col-6 col-sm-3">
-            <a href="{{ route('visual') }}" target="_blank" style="width: 100%;">
+            <a href="{{ route('article.category', 'visual') }}" target="_blank" style="width: 100%;">
                 <img src="{{ asset('img/kubus-visual.png') }}" style="max-width: 100%; max-height: 100%;"
                 onmouseover="this.src='{{ asset('img/kubus-visual-clicked.png') }}'"
                 onmouseout="this.src='{{ asset('img/kubus-visual.png') }}'">
             </a>
         </div>
         <div class="col-6 col-sm-3">
-            <a href="{{ route('video') }}" target="_blank" style="width: 100%;">
+            <a href="{{ route('article.category', 'video') }}" target="_blank" style="width: 100%;">
                 <img src="{{ asset('img/kubus-video.png') }}" style="max-width: 100%; max-height: 100%;"
                 onmouseover="this.src='{{ asset('img/kubus-video-clicked.png') }}'"
                 onmouseout="this.src='{{ asset('img/kubus-video.png') }}'">
             </a>
         </div>
         <div class="col-6 col-sm-3">
-            <a href="{{ route('musik') }}" target="_blank" style="width: 100%;">
+            <a href="{{ route('article.category', 'musik') }}" target="_blank" style="width: 100%;">
                 <img src="{{ asset('img/kubus-musik.png') }}" style="max-width: 100%; max-height: 100%;"
                 onmouseover="this.src='{{ asset('img/kubus-musik-clicked.png') }}'"
                 onmouseout="this.src='{{ asset('img/kubus-musik.png') }}'">
@@ -312,6 +312,9 @@
             <!-- "data-slide" number of item will be slided when clikced-->
             <div class="MultiCarousel" data-items="2.5,3,3,3,3" data-slide="1" id="MultiCarousel"  data-interval="1000">
                 <div class="MultiCarousel-inner">
+                    @if($articles->isEmpty())
+                    Belum ada konten
+                    @endif
                     @foreach($articles as $article)
                     <div class="item">
                         <div class="pad10" id="article-01">
@@ -324,7 +327,7 @@
                             <div class="ex-desc">
                                 <div class="desc">
                                     <span class="filter-event">
-                                        <i>Artikel</i><br>
+                                        <i>{{ $article->category }}</i><br>
                                     </span>
                                     <span class="judul-event">
                                         <b>{{ $article->title }}</b></br>
@@ -335,7 +338,7 @@
                                     <span class="desc-event">
                                         {{ substr($article->body, 0, 50) }}{{ strlen($article->body) > 100 ? '....' : '' }}<br><br>
                                     </span>
-                                    <a class="read-more" href="#">
+                                    <a class="read-more" href="{{ route('article.show', $article->article_id) }}">
                                         Read more
                                     </a>
                                 </div>

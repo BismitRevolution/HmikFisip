@@ -17,6 +17,18 @@
 					</div>
 				</div>
 				<div class="form-group row">
+					<label for="category" class="col-sm-2 col-form-label">Category</label>
+					<div class="col-sm-10">
+						<select id="category" class="form-control" name="category">
+							<option value="article">Artikel</option>
+							<option value="literatur">Literatur</option>
+							<option value="visual">Visual</option>
+							<option value="video">Video</option>
+							<option value="musik">Musik</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group row">
 					<label for="body" class="col-sm-2 col-form-label">Content</label>
 					<div class="col-sm-10">
 						<textarea id="body" name="body" class="form-control" type="text" placeholder="Content" required></textarea>

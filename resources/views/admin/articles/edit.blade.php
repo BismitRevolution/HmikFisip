@@ -20,7 +20,7 @@
 				<div class="form-group row">
 					<label for="body" class="col-sm-2 col-form-label">Content</label>
 					<div class="col-sm-10">
-						<textarea id="body" name="body" for="body" class="form-control" type="text" value="{{ $article->body }}" required></textarea>
+						<textarea id="body" name="body" for="body" class="form-control" type="text" required>{{ $article->body }}</textarea>
 					</div>
 				</div>
 				<!-- <div class="form-group row">
