@@ -1,6 +1,6 @@
 .profile-page {
     font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    margin-top: 20vw;
+    margin-top: 165px;
 }
 
 .profile-page .nama-divisi {
@@ -24,15 +24,4 @@
     height: auto;
     display: block;
     position: relative;
-}
-
-.footer {
-    margin-top: 100px;
-    padding-top: 80px;
-    padding-bottom: 10px;
-    background-image: url(https://cdn-images-1.medium.com/max/1600/1*UpcrJ27NaHZa3TTZWCyKuA.png);
-    background-size: cover;
-    padding: 70px auto 10px auto;
-    width: 100%;
-    height: 25%;
 }
