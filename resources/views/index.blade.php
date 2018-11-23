@@ -120,47 +120,53 @@
             <div class="row">
                 <div class="div-img col-md-4">
                     <div class="divisi" id="divisi-01">
-                        <img src="{{ asset('img/foto-contoh-1.jpg') }}" alt="PENGURUS INTI" class="image-profile">
-                        <div class="ex-desc">
-                            <div class="desc">
-                                <span class="jenis-divisi">
-                                    <b>PENGURUS INTI</b><br>
-                                </span>
-                                <span class="desc-divisi">
-                                    <i>"Mewujudkan organisasi yang progresif dan suportif terhadap publik HMIK UI 2018"</i>
-                                </span>
+                        <div class="image-profile" style="background-image: url({{ asset('img/BPH.jpg') }});"></div>
+                        <a href="{{ route('profile.show.bph') }}">
+                            <div class="ex-desc">
+                                <div class="desc">
+                                    <span class="jenis-divisi">
+                                        <b>PENGURUS INTI</b><br>
+                                    </span>
+                                    <span class="desc-divisi">
+                                        <i>"Mewujudkan organisasi yang progresif dan suportif terhadap publik HMIK UI 2018"</i>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="div-img col-md-4">
                     <div class="divisi" id="divisi-02">
-                        <img src="{{ asset('img/foto-contoh-2.jpg') }}" alt="ADVOKASI DAN SOSIAL" class="image-profile">
-                        <div class="ex-desc">
-                            <div class="desc">
-                                <span class="jenis-divisi">
-                                    <b>BIDANG ADVOKASI DAN SOSIAL</b><br>
-                                </span>
-                                <span class="desc-divisi">
-                                    <i>"Mewujudkan advokasi sosial yang progresif dan suportif terhadap publik HMIK UI 2018"</i>
-                                </span>
+                        <div class="image-profile" style="background-image: url({{ asset('img/Adkesma.jpg') }});"></div>
+                        <a href="{{ route('profile.show.adkesma') }}">
+                            <div class="ex-desc">
+                                <div class="desc">
+                                    <span class="jenis-divisi">
+                                        <b>BIDANG ADVOKASI DAN SOSIAL</b><br>
+                                    </span>
+                                    <span class="desc-divisi">
+                                        <i>"Mewujudkan advokasi sosial yang progresif dan suportif terhadap publik HMIK UI 2018"</i>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="div-img col-md-4">
                     <div class="divisi" id="divisi-03">
-                        <img src="{{ asset('img/foto-contoh-3.jpg') }}" alt="HUMAS" class="image-profile">
-                        <div class="ex-desc">
-                            <div class="desc">
-                                <span class="jenis-divisi">
-                                    <b>BIDANG HUMAS</b><br>
-                                </span>
-                                <span class="desc-divisi">
-                                    <i>"Mewujudkan humas yang progresif dan suportif terhadap publik HMIK UI 2018"</i>
-                                </span>
+                        <div class="image-profile" style="background-image: url({{ asset('img/Humas.jpg') }});"></div>
+                        <a href="{{ route('profile.show.humas') }}">
+                            <div class="ex-desc">
+                                <div class="desc">
+                                    <span class="jenis-divisi">
+                                        <b>BIDANG HUMAS</b><br>
+                                    </span>
+                                    <span class="desc-divisi">
+                                        <i>"Mewujudkan humas yang progresif dan suportif terhadap publik HMIK UI 2018"</i>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -173,47 +179,53 @@
             <div class="row">
                 <div class="div-img col-md-4 text-center">
                     <div class="divisi" id="divisi-04">
-                        <img src="{{ asset('img/foto-contoh-4.jpg') }}" alt="MINAT DAN BAKAT" class="image-profile">
-                        <div class="ex-desc">
-                            <div class="desc">
-                                <span class="jenis-divisi">
-                                    <b>BIDANG MINAT DAN BAKAT</b><br>
-                                </span>
-                                <span class="desc-divisi">
-                                    <i>"Mewujudkan minat dan bakat yang progresif dan suportif terhadap publik HMIK UI 2018"</i>
-                                </span>
+                        <div class="image-profile" style="background-image: url({{ asset('img/Depor.jpg') }});"></div>
+                        <a href="{{ route('profile.show.depor') }}">
+                            <div class="ex-desc">
+                                <div class="desc">
+                                    <span class="jenis-divisi">
+                                        <b>BIDANG MINAT DAN BAKAT</b><br>
+                                    </span>
+                                    <span class="desc-divisi">
+                                        <i>"Mewujudkan minat dan bakat yang progresif dan suportif terhadap publik HMIK UI 2018"</i>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="div-img col-md-4 text-center">
                     <div class="divisi" id="divisi-05">
-                        <img src="{{ asset('img/foto-contoh-5.jpg') }}" alt="PSDM" class="image-profile">
-                        <div class="ex-desc">
-                            <div class="desc">
-                                <span class="jenis-divisi">
-                                    <b>BIRO PSDM</b><br>
-                                </span>
-                                <span class="desc-divisi">
-                                    <i>"Mewujudkan psdm yang progresif dan suportif terhadap publik HMIK UI 2018"</i>
-                                </span>
+                        <div class="image-profile" style="background-image: url({{ asset('img/Psdm.jpg') }});"></div>
+                        <a href="{{ route('profile.show.psdm') }}">
+                            <div class="ex-desc">
+                                <div class="desc">
+                                    <span class="jenis-divisi">
+                                        <b>BIRO PSDM</b><br>
+                                    </span>
+                                    <span class="desc-divisi">
+                                        <i>"Mewujudkan psdm yang progresif dan suportif terhadap publik HMIK UI 2018"</i>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
                 <div class="div-img col-md-4 text-center">
                     <div class="divisi" id="divisi-06">
-                        <img src="{{ asset('img/header-photo.jpg') }}" alt="KEUANGAN" class="image-profile">
-                        <div class="ex-desc">
-                            <div class="desc">
-                                <span class="jenis-divisi">
-                                    <b>BIRO KEUANGAN</b><br>
-                                </span>
-                                <span class="desc-divisi">
-                                    <i>"Mewujudkan keuangan yang progresif dan suportif terhadap publik HMIK UI 2018"</i>
-                                </span>
+                        <div class="image-profile" style="background-image: url({{ asset('img/Keuangan.jpg') }});"></div>
+                        <a href="{{ route('profile.show.keuangan') }}">
+                            <div class="ex-desc">
+                                <div class="desc">
+                                    <span class="jenis-divisi">
+                                        <b>BIRO KEUANGAN</b><br>
+                                    </span>
+                                    <span class="desc-divisi">
+                                        <i>"Mewujudkan keuangan yang progresif dan suportif terhadap publik HMIK UI 2018"</i>
+                                    </span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -300,246 +312,37 @@
             <!-- "data-slide" number of item will be slided when clikced-->
             <div class="MultiCarousel" data-items="2.5,3,3,3,3" data-slide="1" id="MultiCarousel"  data-interval="1000">
                 <div class="MultiCarousel-inner">
+                    @foreach($articles as $article)
                     <div class="item">
                         <div class="pad10" id="article-01">
-                            <img src="{{ asset('img/foto-contoh-1.jpg') }}" alt="PENGURUS INTI" class="image-profile">
+                            @foreach($article->media as $pic)
+							@if($loop->first)
+                            <!-- <div class="image-profile" style="background-image: url({{ '/storage/'.$pic->path }})"></div> -->
+                            <img src="{{ '/storage/'.$pic->path }}" class="image-profile">
+							@endif
+							@endforeach
                             <div class="ex-desc">
                                 <div class="desc">
                                     <span class="filter-event">
-                                        <i>Adkesma, Artikel, Past Event</i><br>
+                                        <i>Artikel</i><br>
                                     </span>
                                     <span class="judul-event">
-                                        <b>COMSPIRE 2017 : WAKTUNYA KOLABORASI!</b></br>
+                                        <b>{{ $article->title }}</b></br>
                                     </span>
                                     <span class="tanggal-event">
-                                        December 29, 2017<br><br><br>
+                                        {{ $article->created_at }}<br><br><br>
                                     </span>
                                     <span class="desc-event">
-                                        Comspire atau Communicate to Inspire 2017 merupakan program...<br><br>
+                                        {{ substr($article->body, 0, 50) }}{{ strlen($article->body) > 100 ? '....' : '' }}<br><br>
                                     </span>
-                                    <a class="read-more" href="">
-                                        Read more ->
+                                    <a class="read-more" href="#">
+                                        Read more
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="item">
-                        <div class="pad10" id="article-02">
-                            <img src="{{ asset('img/foto-header.jpg') }}" alt="PENGURUS INTI" class="image-profile">
-                            <div class="ex-desc">
-                                <div class="desc">
-                                    <span class="filter-event">
-                                        <i>Adkesma, Artikel, Past Event</i><br>
-                                    </span>
-                                    <span class="judul-event">
-                                        <b>COMSPIRE 2017 : WAKTUNYA KOLABORASI!</b></br>
-                                    </span>
-                                    <span class="tanggal-event">
-                                        December 29, 2017<br><br><br>
-                                    </span>
-                                    <span class="desc-event">
-                                        Comspire atau Communicate to Inspire 2017 merupakan program...<br><br>
-                                    </span>
-                                    <a class="read-more" href="">
-                                        Read more ->
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad10" id="article-03">
-                            <img src="{{ asset('img/foto-contoh-1.jpg') }}" alt="PENGURUS INTI" class="image-profile">
-                            <div class="ex-desc">
-                                <div class="desc">
-                                    <span class="filter-event">
-                                        <i>Adkesma, Artikel, Past Event</i><br>
-                                    </span>
-                                    <span class="judul-event">
-                                        <b>COMSPIRE 2017 : WAKTUNYA KOLABORASI!</b></br>
-                                    </span>
-                                    <span class="tanggal-event">
-                                        December 29, 2017<br><br><br>
-                                    </span>
-                                    <span class="desc-event">
-                                        Comspire atau Communicate to Inspire 2017 merupakan program...<br><br>
-                                    </span>
-                                    <a class="read-more" href="">
-                                        Read more ->
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad10" id="article-04">
-                            <img src="{{ asset('img/foto-contoh-3.jpg') }}" alt="PENGURUS INTI" class="image-profile">
-                            <div class="ex-desc">
-                                <div class="desc">
-                                    <span class="filter-event">
-                                        <i>Adkesma, Artikel, Past Event</i><br>
-                                    </span>
-                                    <span class="judul-event">
-                                        <b>COMSPIRE 2017 : WAKTUNYA KOLABORASI!</b></br>
-                                    </span>
-                                    <span class="tanggal-event">
-                                        December 29, 2017<br><br><br>
-                                    </span>
-                                    <span class="desc-event">
-                                        Comspire atau Communicate to Inspire 2017 merupakan program...<br><br>
-                                    </span>
-                                    <a class="read-more" href="">
-                                        Read more ->
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad10" id="article-05">
-                            <img src="{{ asset('img/foto-contoh-5.jpg') }}" alt="PENGURUS INTI" class="image-profile">
-                            <div class="ex-desc">
-                                <div class="desc">
-                                    <span class="filter-event">
-                                        <i>Adkesma, Artikel, Past Event</i><br>
-                                    </span>
-                                    <span class="judul-event">
-                                        <b>COMSPIRE 2017 : WAKTUNYA KOLABORASI!</b></br>
-                                    </span>
-                                    <span class="tanggal-event">
-                                        December 29, 2017<br><br><br>
-                                    </span>
-                                    <span class="desc-event">
-                                        Comspire atau Communicate to Inspire 2017 merupakan program...<br><br>
-                                    </span>
-                                    <a class="read-more" href="">
-                                        Read more ->
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad10" id="article-06">
-                            <img src="{{ asset('img/foto-contoh-4.jpg') }}" alt="PENGURUS INTI" class="image-profile">
-                            <div class="ex-desc">
-                                <div class="desc">
-                                    <span class="filter-event">
-                                        <i>Adkesma, Artikel, Past Event</i><br>
-                                    </span>
-                                    <span class="judul-event">
-                                        <b>COMSPIRE 2017 : WAKTUNYA KOLABORASI!</b></br>
-                                    </span>
-                                    <span class="tanggal-event">
-                                        December 29, 2017<br><br><br>
-                                    </span>
-                                    <span class="desc-event">
-                                        Comspire atau Communicate to Inspire 2017 merupakan program...<br><br>
-                                    </span>
-                                    <a class="read-more" href="">
-                                        Read more ->
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad10" id="article-07">
-                            <img src="{{ asset('img/foto-contoh-2.jpg') }}" alt="PENGURUS INTI" class="image-profile">
-                            <div class="ex-desc">
-                                <div class="desc">
-                                    <span class="filter-event">
-                                        <i>Adkesma, Artikel, Past Event</i><br>
-                                    </span>
-                                    <span class="judul-event">
-                                        <b>COMSPIRE 2017 : WAKTUNYA KOLABORASI!</b></br>
-                                    </span>
-                                    <span class="tanggal-event">
-                                        December 29, 2017<br><br><br>
-                                    </span>
-                                    <span class="desc-event">
-                                        Comspire atau Communicate to Inspire 2017 merupakan program...<br><br>
-                                    </span>
-                                    <a class="read-more" href="">
-                                        Read more ->
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad10" id="article-08">
-                            <img src="{{ asset('img/foto-contoh-5.jpg') }}" alt="PENGURUS INTI" class="image-profile">
-                            <div class="ex-desc">
-                                <div class="desc">
-                                    <span class="filter-event">
-                                        <i>Adkesma, Artikel, Past Event</i><br>
-                                    </span>
-                                    <span class="judul-event">
-                                        <b>COMSPIRE 2017 : WAKTUNYA KOLABORASI!</b></br>
-                                    </span>
-                                    <span class="tanggal-event">
-                                        December 29, 2017<br><br><br>
-                                    </span>
-                                    <span class="desc-event">
-                                        Comspire atau Communicate to Inspire 2017 merupakan program...<br><br>
-                                    </span>
-                                    <a class="read-more" href="">
-                                        Read more ->
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad10" id="article-09">
-                            <img src="{{ asset('img/foto-contoh-4.jpg') }}" alt="PENGURUS INTI" class="image-profile">
-                            <div class="ex-desc">
-                                <div class="desc">
-                                    <span class="filter-event">
-                                        <i>Adkesma, Artikel, Past Event</i><br>
-                                    </span>
-                                    <span class="judul-event">
-                                        <b>COMSPIRE 2017 : WAKTUNYA KOLABORASI!</b></br>
-                                    </span>
-                                    <span class="tanggal-event">
-                                        December 29, 2017<br><br><br>
-                                    </span>
-                                    <span class="desc-event">
-                                        Comspire atau Communicate to Inspire 2017 merupakan program...<br><br>
-                                    </span>
-                                    <a class="read-more" href="">
-                                        Read more ->
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <div class="pad10" id="article-10">
-                            <img src="{{ asset('img/foto-contoh-3.jpg') }}" alt="PENGURUS INTI" class="image-profile">
-                            <div class="ex-desc">
-                                <div class="desc">
-                                    <span class="filter-event">
-                                        <i>Adkesma, Artikel, Past Event</i><br>
-                                    </span>
-                                    <span class="judul-event">
-                                        <b>COMSPIRE 2017 : WAKTUNYA KOLABORASI!</b></br>
-                                    </span>
-                                    <span class="tanggal-event">
-                                        December 29, 2017<br><br><br>
-                                    </span>
-                                    <span class="desc-event">
-                                        Comspire atau Communicate to Inspire 2017 merupakan program...<br><br>
-                                    </span>
-                                    <a class="read-more" href="">
-                                        Read more ->
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
                 <button class="btn btn-primary leftLst"><b>V</b></button>
                 <button class="btn btn-primary rightLst"><b>V</b></button>
