@@ -1,11 +1,16 @@
+.side-bar {
+    padding-left: 50px;
+}
+
 .side-bar .judul {
     margin: 10px 10px;
+    color: #0f894a;
 }
 
 .side-bar .judul p {
     font-family: 'AvenirLTStd-Book', 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-size: 25px;
-    color: rgb(14, 111, 62);
+    color: #0f894a;
 }
 
 .side-bar .collapsed-links a {
