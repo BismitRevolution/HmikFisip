@@ -29,6 +29,8 @@ Route::resource('/template', 'TemplateController');
 
 //posts routes
 Route::resource('/posts', 'PostController');
+Route::get('/article/{id}', 'PageController@showarticle')->name('article.show');
+Route::get('/articles/{category}', 'PageController@showcategory')->name('article.category');
 
 Route::group(['prefix' => 'profile', 'as' => 'profile.'], function () {
     Route::get('/bph', 'ProfileController@indexPI')->name('show.bph');
@@ -60,9 +62,4 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.'], function () {
     Route::get('/article', 'PageController@article')->name('article');
 	Route::resource('/articles', 'ArticleController');
 });
-
-Route::get('/literatur', 'PageController@index')->name('literatur');
-Route::get('/visual', 'PageController@index')->name('visual');
-Route::get('/video', 'PageController@index')->name('video');
-Route::get('/musik', 'PageController@index')->name('musik');
 ?>

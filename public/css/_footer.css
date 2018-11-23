@@ -1,0 +1,9 @@
+.footer {
+    margin-top: 100px;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    background-color: var(--color-green-dark);
+    /* background-image: url(https://cdn-images-1.medium.com/max/1600/1*UpcrJ27NaHZa3TTZWCyKuA.png); */
+    background-size: cover;
+    width: 100%;
+}

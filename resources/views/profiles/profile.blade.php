@@ -35,7 +35,4 @@
 			</div>
         </div>
     </div>
-	<div class="footer text-center">
-		Copyright - HMIK UI
-	</div>
 @endsection

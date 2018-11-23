@@ -17,7 +17,9 @@ class ArticleController extends Controller
      */
     public function index()
     {
-        $articles = DB::table('articles')->get();
+        $articles = DB::table('articles')
+                    // ->where('articles.category', '=', 'article')
+                    ->get();
 
         foreach($articles as $article){
             $article->media = DB::table('media')
@@ -53,6 +55,7 @@ class ArticleController extends Controller
        $article = new Article;
 
        $article->title = $request->title;
+       $article->category = $request->category;
        $article->body = $request->body;
        $article->save();
 
@@ -71,7 +74,8 @@ class ArticleController extends Controller
             }
         }
 
-       return redirect()->route('admin.articles.show', $article->article_id);
+        return redirect()->route('admin.articles.index');
+        // return redirect()->route('admin.articles.show', $article->article_id);
 
     }
 
@@ -85,6 +89,7 @@ class ArticleController extends Controller
     {
         $article = DB::table('articles')
                     ->where('articles.article_id', '=', $id)
+                    ->where('articles.category', '=', 'article')
                     ->first();
 
         $media = DB::table('media')

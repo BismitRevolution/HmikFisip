@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top navbar-light new-navbar">
     <div class="navbar-brand">
         <div class="background-logo" id="logo"></div>
-        <a class="js-scroll-trigger" href="#home">
+        <a class="js-scroll-trigger" href="{{ route('index') }}">
             <img src="{{ asset('img/logo.png') }}" alt="Logo HMIK" class="navbar-logo" id="nav-logo">
             <img src="{{ asset('img/logo-word.png') }}" alt="HMIK FISIP UI" class="navbar-logo" id="nav-logo-word">
         </a>
@@ -13,7 +13,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbar-main">
             <ul class="nav navbar-nav text-uppercase ml-auto text-center">
-                <li class="nav-item home-link"><a class="nav-link js-scroll-trigger" data-toggle="collapse" data-target=".navbar-collapse.show" href="#header">HOME</a></li>
+                <li class="nav-item home-link"><a class="nav-link js-scroll-trigger" data-toggle="collapse" data-target=".navbar-collapse.show" href="{{ route('index') }}">HOME</a></li>
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" data-toggle="collapse" data-target=".navbar-collapse.show" href="#tentang-kami">TENTANG KAMI</a></li>
                 <!-- <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#profil" id="dropdownProfil" data-toggle="collapse" data-target=".navbar-collapse.show" aria-haspopup="true" aria-expanded="false">
